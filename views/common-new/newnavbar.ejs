@@ -1,0 +1,476 @@
+<section>
+
+    <section class="top-newbar-section newHd fixed-top d-none d-lg-block">
+        <nav class="navbar navbar-expand-lg py-0 navmenu">
+            <div class="container-fluid col-xl-11 mx-auto">
+
+                <a class="navbar-brand" href="/">
+                    <img src="https://assets.clarisco.com/clarisco-images/clarisco-logo-white.svg" alt="logo" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto align-items-center navbar-nav-cen-1">
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/about-us">ABOUT US</a>
+                        </li>
+
+                        <!-- RWA Tokenization — static, lightweight, always visible to crawlers -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle menu-link" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                RWA Tokenization
+                            </a>
+                            <ul class="megamenu menu-css">
+                                <li><a class="dropdown-item" href="/asset-tokenization-development-company">
+                                        Asset Tokenization Platform Development</a></li>
+                                <li><a class="dropdown-item" href="/rwa-tokenization-platform-development">RWA
+                                        Tokenization Platform Development</a></li>
+                                <li><a class="dropdown-item" href="/real-estate-tokenizations">Real Estate Tokenization
+                                        Platform Development</a></li>
+                                <li><a class="dropdown-item" href="/gold-tokenization-development-company">Gold
+                                        Tokenization Platform Development</a></li>
+                                <li><a class="dropdown-item" href="/carbon-credits-tokenization-development">Carbon
+                                        Credits Tokenization Platform Development</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Prediction Markets — static, lightweight -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle menu-link" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Prediction Markets
+                            </a>
+                            <ul class="megamenu menu-css">
+                                <li><a class="dropdown-item" href="/polymarket-clone-script">Polymarket Clone Script</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/kalshi-clone-script">Kalshi Clone Script</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- ============================================================
+                             SERVICES — lazy loaded mega menu
+                             The full 5700-line dropdown HTML is fetched AFTER page load.
+                             AI crawlers see only this lightweight placeholder.
+                             ============================================================ -->
+                        <li class="nav-item click-menu-item" id="services-nav-item">
+                            <a class="nav-link dropdown-toggle menu-link" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <!-- Placeholder — filled by lazy loader below -->
+                            <div id="services-mega-placeholder"></div>
+                        </li>
+
+                        <!-- ============================================================
+                             PRODUCT — lazy loaded mega menu
+                             Same lazy load approach as Services.
+                             ============================================================ -->
+                        <li class="nav-item click-menu-item" id="products-nav-item">
+                            <a class="nav-link dropdown-toggle menu-link" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Product
+                            </a>
+                            <!-- Placeholder — filled by lazy loader below -->
+                            <div id="products-mega-placeholder"></div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/blog">BLOG</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/portfolio">PORTFOLIO</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav align-items-center navbar-nav-cen-2">
+                        <li class="nav-item">
+                            <button class="nav-link talkto-expert" data-bs-toggle="modal" data-bs-target="#PopForm">
+                                TALK TO OUR EXPERTS <i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item ms-xl-3">
+                            <i class="fa-solid fa-bars" id="openSidebar"></i>
+                            <div class="uniqueoffcanvas">
+                                <div id="uniqueSidebar1" class="unique-sidebar">
+                                    <button id="openSidebar">Open Sidebar</button>
+                                    <div class="uniqueoffcanvas">
+                                        <div id="uniqueSidebar" class="unique-sidebar">
+                                            <button id="closeSidebar" class="closebtn">&times;</button>
+                                            <div class="unique-sidebar-content">
+                                                <div class="d-flex justify-content-center">
+                                                    <a class="navbar-brand pb-lg-3" href="/">
+                                                        <img loading="lazy"
+                                                            src="https://assets.clarisco.com/clarisco-images/clarisco-logo-white.svg"
+                                                            alt="logo" />
+                                                    </a>
+                                                </div>
+                                                <ul class='ul-type'>
+                                                    <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Company
+                                                        </a>
+                                                        <ul class="dropdown-menu menu">
+                                                            <li class="menu-item"><a href="/privacy-policy">Privacy &
+                                                                    Policy</a></li>
+                                                            <li class="menu-item"><a href="/terms-conditions">Terms &
+                                                                    Conditions</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="nav-item"><button
+                                                            class="nav-link bg-transparent nav-pitch-link" type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#staticBackdrop">Pitch Deck</button></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/case-studies">Case
+                                                            Studies</a></li>
+                                                    <li class="nav-item"><a class="nav-link"
+                                                            href="/industries">Industries</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/career">Career <span
+                                                                class="apply-css">Apply</span></a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/contact">Contact
+                                                            Us</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/events">Events</a>
+                                                    </li>
+                                                    <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Hire Us
+                                                        </a>
+                                                        <ul class="dropdown-menu menu">
+                                                            <li><a class="menu-item" href="/hire-developers">Hire Our
+                                                                    Dedicated Developers</a></li>
+                                                            <li><a class="menu-item"
+                                                                    href="/our-talent-acquisition-and-staffing-services">Our
+                                                                    Talent Acquisition and Staffing Services</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="nav-item my-lg-2">
+                                                        <div class="nav-link talkto-expert">
+                                                            Chat with Our Consultants<i
+                                                                class="fa-solid fa-arrow-down ms-2"></i>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-lg-2">
+                                                            <div>
+                                                                <a class="nav-link top-social-navlink" target="_blank"
+                                                                    rel="noreferrer"
+                                                                    href="https://api.whatsapp.com/send?phone=919442430551&text=*Hi%20there!%20I%20am%20looking%20for%20your%20Services,%20Shall%20we%20Start%20the%20discussion*">
+                                                                    <img loading="lazy"
+                                                                        src="https://assets.clarisco.com/images/social-icons/whatsapp.webp"
+                                                                        alt="social-icons" />
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <a class="nav-link top-social-navlink" target="_blank"
+                                                                    href="https://teams.live.com/l/invite/FEAQUx1rOI4OBlgMAE"
+                                                                    aria-label="72HDDXfJ7d" rel="noreferrer">
+                                                                    <i class="bi bi-microsoft-teams img"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <a class="nav-link top-social-navlink" target="_blank"
+                                                                    rel="noreferrer"
+                                                                    href="https://telegram.me/ClariscoSolutions">
+                                                                    <img loading="lazy"
+                                                                        src="https://assets.clarisco.com/images/social-icons/telegram.webp"
+                                                                        alt="social-icons" />
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <a class="nav-link top-social-navlink" target="_blank"
+                                                                    rel="noreferrer"
+                                                                    href="https://calendly.com/clariscosolutions">
+                                                                    <img loading="lazy" class="time-img"
+                                                                        src="/assets/img/timetable.webp"
+                                                                        alt="social-icons" />
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div id="uniqueOverlay" class="unique-overlay"></div>
+                                    </div>
+                                </div>
+                                <div id="uniqueOverlay" class="unique-overlay"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+
+</section>
+
+
+<script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+<!-- ============================================================
+     LAZY MEGA MENU LOADER
+     Fetches /partials/mega-menu ONCE on first hover.
+     Until then: zero bytes of mega menu HTML in the page.
+     AI crawlers never execute this — they see only the 
+     lightweight static nav above.
+     ============================================================ -->
+<script>
+    (function () {
+        var megaLoaded = false;
+
+        function loadMegaMenu() {
+            if (megaLoaded) return;
+            megaLoaded = true;
+
+            fetch('/partials/mega-menu')
+                .then(function (r) { return r.text(); })
+                .then(function (html) {
+                    // Inject full mega menu HTML into both placeholders
+                    var temp = document.createElement('div');
+                    temp.innerHTML = html;
+
+                    var servicesMega = temp.querySelector('#mega-services-content');
+                    var productsMega = temp.querySelector('#mega-products-content');
+
+                    var servicesPlaceholder = document.getElementById('services-mega-placeholder');
+                    var productsPlaceholder = document.getElementById('products-mega-placeholder');
+
+                    if (servicesMega && servicesPlaceholder) {
+                        servicesPlaceholder.innerHTML = servicesMega.innerHTML;
+                    }
+                    if (productsMega && productsPlaceholder) {
+                        productsPlaceholder.innerHTML = productsMega.innerHTML;
+                    }
+
+                    // Re-init click handlers after inject
+                    initMegaMenuClicks();
+                    initImageSwitchers();
+                })
+                .catch(function (err) {
+                    console.warn('Mega menu failed to load:', err);
+                });
+        }
+
+        // Trigger on hover over Services or Product nav items
+        ['services-nav-item', 'products-nav-item'].forEach(function (id) {
+            var el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('mouseenter', loadMegaMenu, { once: true });
+                el.addEventListener('touchstart', loadMegaMenu, { once: true });
+            }
+        });
+
+        // Fallback: load after 4 seconds (covers mobile, slow interactions)
+        setTimeout(loadMegaMenu, 4000);
+
+        // ── Re-init click handlers for mega menu after it's injected ──
+        function initMegaMenuClicks() {
+            var navItems = document.querySelectorAll('.click-menu-item');
+            var activeMenu = null;
+
+            navItems.forEach(function (navItem) {
+                var megaMenu = navItem.querySelector('.megamenu');
+                if (!megaMenu) return;
+
+                navItem.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    if (activeMenu === megaMenu) {
+                        megaMenu.style.display = 'none';
+                        activeMenu = null;
+                    } else {
+                        if (activeMenu) activeMenu.style.display = 'none';
+                        megaMenu.style.display = 'block';
+                        activeMenu = megaMenu;
+                    }
+                });
+
+                megaMenu.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+
+                // Scroll lock on hover (desktop)
+                megaMenu.addEventListener('mouseenter', function () {
+                    document.body.style.overflow = 'hidden';
+                    document.body.style.paddingRight = '8px';
+                });
+                megaMenu.addEventListener('mouseleave', function () {
+                    document.body.style.overflow = 'scroll';
+                    document.body.style.paddingRight = '0px';
+                });
+            });
+
+            document.addEventListener('click', function () {
+                if (activeMenu) {
+                    activeMenu.style.display = 'none';
+                    activeMenu = null;
+                }
+            });
+        }
+
+        // ── Re-init image switchers (section-1, section-2) after inject ──
+        function initImageSwitchers() {
+            document.querySelectorAll('.section-1 .show-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    document.querySelectorAll('.section-1 .image-container').forEach(function (img) {
+                        img.style.display = 'none';
+                    });
+                    var target = document.querySelector(btn.getAttribute('data-target'));
+                    if (target) target.style.display = 'block';
+                });
+            });
+            document.querySelectorAll('.section-2 .show-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    document.querySelectorAll('.section-2 .image-container').forEach(function (img) {
+                        img.style.display = 'none';
+                    });
+                    var target = document.querySelector(btn.getAttribute('data-target'));
+                    if (target) target.style.display = 'block';
+                });
+            });
+        }
+
+    })();
+</script>
+
+<!-- Scroll behavior for navbar background -->
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var wscroll = $(this).scrollTop();
+            if (wscroll > 50) {
+                $(".top-newbar-section .navbar").css("background-color", "rgb(27, 27, 27)");
+            } else {
+                $(".top-newbar-section .navbar").css("background-color", "#ffffff1c");
+            }
+        });
+    });
+</script>
+
+<!-- Sidebar open/close -->
+
+
+<!-- Tab LocalStorage -->
+<script>
+    $(document).ready(function () {
+
+        let modalOpen = false;
+
+        // ===========================
+        // DESKTOP SIDEBAR
+        // ===========================
+
+        function openSidebar() {
+            $('#uniqueSidebar').css('right', '0');
+            $('#uniqueOverlay').addClass('active');
+            $('body').addClass('over-hid').css('overflow', 'hidden');
+        }
+
+        function closeSidebar() {
+
+            if (modalOpen) return;
+
+            $('#uniqueSidebar').css('right', '-300px');
+            $('#uniqueOverlay').removeClass('active');
+
+            // Remove body class only if mobile offcanvas is also closed
+            if (!$('#offcanvasWithBothOptions').hasClass('show')) {
+                $('body').removeClass('over-hid').css('overflow', '');
+            }
+        }
+
+        // Open Desktop Sidebar
+        $('#openSidebar').on('click', function (e) {
+            e.stopPropagation();
+            openSidebar();
+        });
+
+        // Close Desktop Sidebar
+        $('#closeSidebar, #uniqueOverlay').on('click', function (e) {
+            e.stopPropagation();
+            closeSidebar();
+        });
+
+        // Prevent clicks inside desktop sidebar
+        $('#uniqueSidebar').on('click', function (e) {
+            e.stopPropagation();
+        });
+
+        // Keep sidebar open for Pitch Deck
+        $('.nav-pitch-link').on('click', function (e) {
+            e.stopPropagation();
+        });
+
+        // Click outside desktop sidebar
+        $(document).on('click', function (e) {
+
+            if (modalOpen) return;
+
+            if (
+                $(e.target).closest('#uniqueSidebar').length ||
+                $(e.target).closest('#openSidebar').length
+            ) {
+                return;
+            }
+
+            closeSidebar();
+
+        });
+
+        // ===========================
+        // MOBILE OFFCANVAS
+        // ===========================
+
+        $('#offcanvasWithBothOptions').on('shown.bs.offcanvas', function () {
+            $('body').addClass('over-hid').css('overflow', 'hidden');
+        });
+
+        $('#offcanvasWithBothOptions').on('hidden.bs.offcanvas', function () {
+
+            if (!modalOpen) {
+                $('body').removeClass('over-hid').css('overflow', '');
+            }
+
+        });
+
+        // ===========================
+        // PITCH DECK MODAL
+        // ===========================
+
+        $('#staticBackdrop').on('show.bs.modal', function () {
+            modalOpen = true;
+        });
+
+        $('#staticBackdrop').on('shown.bs.modal', function () {
+            $('body').addClass('over-hid').css('overflow', 'hidden');
+        });
+
+        $('#staticBackdrop').on('hidden.bs.modal', function () {
+
+            modalOpen = false;
+
+            setTimeout(function () {
+
+                // Desktop sidebar open
+                if ($('#uniqueSidebar').css('right') === '0px') {
+                    $('body').addClass('over-hid').css('overflow', 'hidden');
+                }
+
+                // Mobile offcanvas open
+                if ($('#offcanvasWithBothOptions').hasClass('show')) {
+                    $('body').addClass('over-hid').css('overflow', 'hidden');
+                }
+
+            }, 100);
+
+        });
+
+    });
+</script>

@@ -1,0 +1,108 @@
+<% const industries=[ { title: "Finance & Fintech" ,
+    img: "https://assets.clarisco.com/clarisco-images/nw-landing-page/industries/Finance.webp" ,
+    desc: "From crypto exchanges and DeFi platforms to payment gateways and neo-banking solutions, we build secure, compliant financial products that handle real-world transactions for millions of users with real regulatory requirements across multiple jurisdictions."
+    }, { title: "Healthcare" ,
+    img: "https://assets.clarisco.com/clarisco-images/nw-landing-page/industries/Healthcare.webp" ,
+    desc: "We build AI-powered diagnostic tools, patient data management systems, telemedicine platforms, and blockchain-based medical record solutions that keep sensitive health data secure to make it accessible to the right people at the right time."
+    }, { title: "Real Estate" ,
+    img: "https://assets.clarisco.com/clarisco-images/nw-landing-page/industries/RealEstate.webp" ,
+    desc: "From property RWA tokenization platforms and fractional ownership systems to AI-driven valuation tools and blockchain-based title management, we help real estate businesses bring traditionally illiquid assets into the digital economy."
+    }, { title: "Retail & E-Commerce" ,
+    img: "https://assets.clarisco.com/clarisco-images/nw-landing-page/industries/Retail.webp" ,
+    desc: "We develop AI recommendation engines, dynamic pricing systems, blockchain-based supply chain trackers, and loyalty token programs that help retail businesses sell smarter, retain customers longer, and manage inventory more accurately."
+    }, { title: "Education" ,
+    img: "https://assets.clarisco.com/clarisco-images/nw-landing-page/industries/Education.webp" ,
+    desc: "From adaptive learning platforms and AI-powered tutoring systems to blockchain-verified credential management, we build education tech that personalizes learning and makes qualifications permanently verifiable."
+    }, { title: "Gaming & Entertainment" ,
+    img: "https://assets.clarisco.com/clarisco-images/nw-landing-page/industries/Gaming.webp" ,
+    desc: "We build blockchain games, NFT marketplaces, play-to-earn platforms, metaverse environments, and AI-powered game engines that create engaging digital experiences where players truly own what they earn inside the game."
+    }, { title: "Logistics, Supply Chain & Manufacturing" ,
+    img: "https://assets.clarisco.com/clarisco-images/nw-landing-page/industries/Logistics.webp" ,
+    desc: "From blockchain-based shipment tracking, AI-powered predictive maintenance systems, and smart contract-powered supplier agreements to AI-driven demand forecasting and route optimization systems, we help logistics businesses reduce delays, cut costs, and improve end-to-end visibility."
+    }, { title: "Legal & Compliance" ,
+    img: "https://assets.clarisco.com/clarisco-images/nw-landing-page/industries/Legal.webp" ,
+    desc: "From smart contract automation and blockchain-based document verification to AI-powered contract review tools and KYC/AML compliance platforms, we help legal and compliance teams reduce manual work and build auditable, tamper-proof records."
+    } ]; %>
+
+    <section class="nw-bann-sec-7">
+        <div class="container-fluid col-lg-10">
+            <div class="d-flex flex-row gap-lg-3 gap-2 mb-lg-5 mb-4">
+                <h5 class="bann-w-txt-1" data-aos="fade-up">The Industries We <label>Serve</label>
+                    <span>Transform</span>
+                </h5>
+                <div class="d-flex gap-2 ms-auto">
+                    <button class="aroow-btn swiper-button-aroow-2"><i class="bi bi-arrow-left"></i></button>
+                    <button class="aroow-btn swiper-button-aroow-1"><i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="swiper mySwiper333" data-aos="fade-up">
+                        <div class="swiper-wrapper">
+
+                            <% industries.forEach(function(item){ %>
+                                <div class="swiper-slide">
+                                    <a href="/industries" target="_blank">
+                                        <div class="industry-card">
+
+                                            <div>
+                                                <button class="tag">
+                                                    <%= item.title %>
+                                                </button>
+                                            </div>
+
+                                            <img src="<%= item.img %>" class="img-fluid" alt="<%= item.title %>">
+
+                                            <div class="d-flex gap-1 align-items-center">
+                                                <p class="ind-txt-1">
+                                                    <%= item.desc %>
+                                                </p>
+                                                <div class="aroow-icon">
+                                                    <i class="bi bi-arrow-up-right"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <% }); %>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper(".mySwiper333", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+
+                navigation: {
+                    nextEl: ".swiper-button-aroow-1",
+                    prevEl: ".swiper-button-aroow-2",
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                    },
+
+                    1200: {
+                        slidesPerView: 3,
+                    },
+                    1400: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+        });
+    </script>

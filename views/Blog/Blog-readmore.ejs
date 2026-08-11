@@ -1,0 +1,2016 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon"
+    href="https://assets.clarisco.com/images/favicon.ico" rel="preload">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="apple-touch-icon"
+    href="https://assets.clarisco.com/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/countrySelect.css">
+  <link rel="stylesheet" href="../../assets/css/newnavbar.css">
+  <link rel="stylesheet" href="../../assets/css/newwhitehome.css">
+
+
+  <link rel="stylesheet" href="../../build/css/intelInput_18.css">
+
+  <script src="../../build/js/jQuery.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+  <% if(blogdata.blog_meta_title){ %>
+    <title>
+      <%- blogdata.blog_meta_title %>
+    </title>
+    <link rel="canonical" href="https://www.clarisco.com/<%- blogdata.blog_link %>" />
+    <meta name="title" content="<%- blogdata.blog_meta_title %>" />
+    <meta name="description" content="<%- blogdata.blog_meta_description %>" />
+    <meta name="keywords" content="<%- blogdata.blog_meta_keywords %>" />
+
+    <meta property="og:image" content="<%- blogdata.blogimg %>" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:image:alt" content="<%- blogdata.blog_meta_title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.clarisco.com/<%- blogdata.blog_link %>" />
+    <meta property="og:title" content="<%- blogdata.blog_meta_title %>" />
+    <meta property="og:description" content="<%- blogdata.blog_meta_description %>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%- blogdata.blog_meta_title %>" />
+    <meta name="twitter:description" content="<%- blogdata.blog_meta_description %>" />
+    <meta name="twitter:site" content="@clariscosol" />
+    <meta name="twitter:image" content="<%- blogdata.blogimg %>" />
+    <meta name="twitter:creator" content="@clariscosol" />
+    <% } %>
+  <!-- Google Tag Manager -->
+  <script type="text/javascript">(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); 0
+  })(window, document, 'script', 'dataLayer', 'GTM-NPP6XNS');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Meta Pixel Code -->
+<script>
+  !function (f, b, e, v, n, t, s) {
+    if (f.fbq) return; n = f.fbq = function () {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+    n.queue = []; t = b.createElement(e); t.async = !0;
+    t.src = v; s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1119920575546508');
+  fbq('track', 'PageView');
+</script>
+<noscript><img loading="lazy" height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1119920575546508&ev=PageView&noscript=1" /></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ6WG7NN8L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-KQ6WG7NN8L');
+</script>
+
+<!-- Google tag (gtag.js) -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+      <% if(blogdata.blog_schema){ %>
+        <%- blogdata.blog_schema %>
+          <% } %>
+
+</head>
+
+<body>
+
+  <section class="top-home-new-social-fixed next-searching">
+    <div class="container-fluid">
+      <div class="top-home-new-social-fixed-top-services mb-2">
+        <div class="row">
+          <div class="col-lg-6">
+            <li><a href="/cryptocurrency-development" class="new-social-fixed-text-2">Cryptocurrency
+                Development <i class="fa fa-long-arrow-right"></i></a></li>
+            <li><a href="/cryptocurrency-exchange-development" class="new-social-fixed-text-2">Cryptocurrency Exchange
+                Development <i class="fa fa-long-arrow-right"></i></a></li>
+            <li><a href="/nft-token-development" class="new-social-fixed-text-2">Token Development <i
+                  class="fa fa-long-arrow-right"></i></a></li>
+            <li><a href="/nft-development-services-solutions" class="new-social-fixed-text-2">NFT
+                Development <i class="fa fa-long-arrow-right"></i></a></li>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <li><a href="/blockchain-development-company" class="new-social-fixed-text-2"><i
+                  class="fa fa-long-arrow-left me-lg-2"></i>Blockchain Development
+              </a></li>
+            <li><a href="/defi-development-company" class="new-social-fixed-text-2"><i
+                  class="fa fa-long-arrow-left me-lg-2"></i>DeFi Development
+              </a></li>
+            <li><a href="/metaverse-development-company" class="new-social-fixed-text-2"><i
+                  class="fa fa-long-arrow-left me-lg-2"></i>Metaverse Development
+              </a></li>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row align-items-center">
+        <div class="d-flex flex-row align-items-center top-social-fixed-border">
+          <span class="new-social-fixed-text-1 new-ourservice-text" id="top-serivces-open">Our Services <i
+              class="fa-solid fa-align-justify"></i></span>
+          <span class="new-social-fixed-text-1" id="top-serivces-close">Our Services <i
+              class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div>
+          <a class="d-flex align-items-center" rel="noreferrer" target="_blank"
+            href="https://api.whatsapp.com/send?phone=919442430551&text=*Hi%20there!%20I%20am%20looking%20for%20your%20Services,%20Shall%20we%20Start%20the%20discussion*"><i
+              class="fa-brands fa-whatsapp new-social-fixed-icon-1"></i>
+            <span class="new-social-fixed-text-1 d-lg-block d-none">+91 94424 30551</span></a>
+        </div>
+        <div>
+          <a class="d-flex align-items-center" target="_blank" href="https://telegram.me/ClariscoSolutions"
+            aria-label="72HDDXfJ7d" rel="noreferrer"><i class="fa-brands fa-telegram new-social-fixed-icon-2"></i>
+            <span class="new-social-fixed-text-1 d-lg-block d-none">@ClariscoSolutions</span></a>
+        </div>
+        <div>
+          <a class="d-flex align-items-center" target="_blank" rel="noreferrer"
+            href="https://teams.live.com/l/invite/FEAQUx1rOI4OBlgMAE">
+            <!-- <i class="fa-brands fa-skype new-social-fixed-icon-3"></i> -->
+            <i class="bi bi-microsoft-teams new-social-fixed-icon-3"></i>
+            <span class="new-social-fixed-text-1 d-lg-block d-none">live:.cid.a0a438f91c1c9c5d</span></a>
+        </div>
+        <div>
+          <a class="d-flex align-items-center" target="_blank" rel="noreferrer" href="/contact"><i
+              class="fa-brands fa-wpforms new-social-fixed-icon-4"></i>
+            </i><span class="new-social-fixed-text-1 d-lg-block d-none">Get Free Consultation</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="top-home-banner-navbar-section">
+    <nav class="navbar navbar-expand-lg  fixed-top " id="shrink-navbar-top-banner">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img loading="lazy" rel="preload"
+            src="https://assets.clarisco.com/clarisco-images/clarisco-logo-white.svg" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-align-justify"
+              style="font-size: 24px; margin-top: 3px;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse my-lg-auto my-3" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown_megamenu-section-1">
+              <div class="dropdown nav-link">
+                <button class="navbar-mega-dropdown dropdown-toggle top-navbar-hover-new-design " type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </button>
+                <ul class="dropdown-menu">
+                  <div class="dropdown_megamenu-content dropdown_megamenu-content-dropdown-1">
+                    <div class='row'>
+                      <div class='col-lg-5 dropdown_megamenu-content-height-scroll'>
+                        <ul class="p-0">
+                          <li>
+  
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                              aria-orientation="vertical">
+  
+                              <button class="nav-link active" id="v-pills-service1-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-service1" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-solid fa-right-left"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">Cryptocurrency Exchange</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/cryptocurrency-exchange-development">
+                                      <li>Cryptocurrency Exchange Development</li>
+                                    </a>
+                                    <a href="/contact">
+                                      <li>Centralized Exchange Development</li>
+                                    </a>
+                                    <a href="/decentralized-exchange-development">
+                                      <li>Decentralized Exchange Development</li>
+                                    </a>
+                                    <a href="/p2p-cryptocurrency-exchange-development">
+                                      <li>P2P Crypto Exchange Development</li>
+                                    </a>
+                                    <a href="/white-label-crypto-exchange">
+                                      <li>White-Label Crypto Exchange Development</li>
+                                    </a>
+                                    <a href="/crypto-derivatives-exchange-developement-company">
+                                      <li>Crypto Derivative Exchange Development</li>
+                                    </a>
+                                  </ul>
+                                </div>
+                              </button>
+                              <button class="nav-link" id="v-pills-service2-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-service2" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-sharp fa-solid fa-cube"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">Blockchain</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/blockchain-development-company">
+                                      <li>Blockchain Development Service</li>
+                                    </a>
+                                    <a href="/blockchain-consulting">
+                                      <li>Blockchain Consulting</li>
+                                    </a>
+                                    <a href="/private-blockchain-development">
+                                      <li>Private Blockchain Development</li>
+                                    </a>
+                                    <a href="/hyfi-blockchain-development">
+                                      <li>Hybrid Finance Blockchain Development</li>
+                                    </a>
+  
+                                  </ul>
+                                </div>
+                              </button>
+                              <button class="nav-link" id="v-pills-service3-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-service3" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-solid fa-boxes-stacked"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">NFT</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/nft-marketplace-development">
+                                      <li>NFT Marketplace Development</li>
+                                    </a>
+                                    <a href="/white-label-nft-marketplace-development">
+                                      <li>Whitelabel NFT Marketplace</li>
+                                    </a>
+                                    <a href="/nft-marketplace-on-bsc">
+                                      <li>NFT Marketplace On BSC</li>
+                                    </a>
+                                    <a href="/nft-marketplace-For-art">
+                                      <li>NFT Art Marketplace</li>
+                                    </a>
+                                  </ul>
+                                </div>
+                              </button>
+                              <button class="nav-link" id="v-pills-service4-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-service4" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-brands fa-hive"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">DeFi</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/defi-development-company">
+                                      <li>Decentralized Finance Development</li>
+                                    </a>
+                                    <a href="/defi-insurance-platform-development-services">
+                                      <li>DeFi Insurance Platform Development</li>
+                                    </a>
+                                    <a href="/defi-smart-contract-development-company">
+                                      <li>DeFi Smart Contract Development</li>
+                                    </a>
+                                    <a href="/defi-yield-farming-development">
+                                      <li>DeFi Yield Farming Development</li>
+                                    </a>
+                                    <a href="/dapps-development">
+                                      <li>DApp Development</li>
+                                    </a>
+                                  </ul>
+                                </div>
+                              </button>
+                              <button class="nav-link" id="v-pills-service5-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-service5" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-solid fa-vr-cardboard"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">Metaverse</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/metaverse-development-company">
+                                      <li>Metaverse Development</li>
+                                    </a>
+                                    <a href="/metaverse-nft-marketplace-development">
+                                      <li>Metaverse NFT Marketplace Development</li>
+                                    </a>
+                                  </ul>
+                                </div>
+                              </button>
+                              <button class="nav-link" id="v-pills-service6-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-service6" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-solid fa-coins"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">Tokenization</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/token-development-company">
+                                      <li>Token Development Company</li>
+                                    </a>
+                                    <a href="/real-estate-tokenizations">
+                                      <li>Real Estate Tokenziation</li>
+                                    </a>
+                                    <a href="/art-tokenization">
+                                      <li>Art Tokenization</li>
+                                    </a>
+                                    <a href="/asset-tokenization-development-company">
+                                      <li>Asset Tokenization Development</li>
+                                    </a>
+                                    <a href="/tokenized-asset-offering">
+                                      <li>Tokenized Assets Offering Development</li>
+                                    </a>
+                                    <a href="/ico-script-software">
+                                      <li>ICO Development</li>
+                                    </a>
+                                    <a href="/sto-development">
+                                      <li>STO Development</li>
+                                    </a>
+                                    <a href="/ido-development">
+                                      <li>IDO/IEO Development</li>
+                                    </a>
+                                    <a href="/stable-coin-development">
+                                      <li>Stablecoin Development</li>
+                                    </a>
+                                  </ul>
+                                </div>
+                              </button>
+                              <button class="nav-link" id="v-pills-service7-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-service7" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-brands fa-uncharted"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">Custom Softwares</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/web-app-development-services">
+                                      <li>Web & Mobile App Development</li>
+                                    </a>
+                                    <a href="/contact">
+                                      <li>UI/UX Development</li>
+                                    </a>
+                                    <a href="/cryptocurrency-payment-gateway-development">
+                                      <li>Crypto Payment Gateway Development</li>
+                                    </a>
+                                  </ul>
+                                </div>
+                              </button>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class='col-lg-7 d-lg-block d-none'>
+                        <li>
+                          <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-service1" role="tabpanel"
+                              aria-labelledby="v-pills-service1-tab">
+                              <ul>
+                                <a href="/cryptocurrency-exchange-development">
+                                  <li>Cryptocurrency Exchange Development</li>
+                                </a>
+                                <a href="/contact">
+                                  <li>Centralized Exchange Development</li>
+                                </a>
+                                <a href="/decentralized-exchange-development">
+                                  <li>Decentralized Exchange Development</li>
+                                </a>
+                                <a href="/p2p-cryptocurrency-exchange-development">
+                                  <li>P2P Crypto Exchange Development</li>
+                                </a>
+                                <a href="/white-label-crypto-exchange">
+                                  <li>White-Label Crypto Exchange Development</li>
+                                </a>
+                                <a href="/crypto-derivatives-exchange-developement-company">
+                                  <li>Crypto Derivative Exchange Development</li>
+                                </a>
+                              </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-service2" role="tabpanel"
+                              aria-labelledby="v-pills-service2-tab">
+                              <ul>
+                                <a href="/blockchain-development-company">
+                                  <li>Blockchain Development Service</li>
+                                </a>
+                                <a href="/blockchain-consulting">
+                                  <li>Blockchain Consulting</li>
+                                </a>
+                                <a href="/private-blockchain-development">
+                                  <li>Private Blockchain Development</li>
+                                </a>
+                                <a href="/hyfi-blockchain-development">
+                                  <li>Hybrid Finance Blockchain Development</li>
+                                </a>
+  
+                              </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-service3" role="tabpanel"
+                              aria-labelledby="v-pills-service3-tab">
+                              <ul>
+                                <a href="/nft-marketplace-development">
+                                  <li>NFT Marketplace Development</li>
+                                </a>
+                                <a href="/white-label-nft-marketplace-development">
+                                  <li>Whitelabel NFT Marketplace</li>
+                                </a>
+                                <a href="/nft-marketplace-on-bsc">
+                                  <li>NFT Marketplace On BSC</li>
+                                </a>
+                                <a href="/nft-marketplace-For-art">
+                                  <li>NFT Art Marketplace</li>
+                                </a>
+                              </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-service4" role="tabpanel"
+                              aria-labelledby="v-pills-service4-tab">
+                              <ul>
+                                <a href="/defi-development-company">
+                                  <li>Decentralized Finance Development</li>
+                                </a>
+                                <a href="/defi-insurance-platform-development-services">
+                                  <li>DeFi Insurance Platform Development</li>
+                                </a>
+                                <a href="/defi-smart-contract-development-company">
+                                  <li>DeFi Smart Contract Development</li>
+                                </a>
+                                <a href="/defi-yield-farming-development">
+                                  <li>DeFi Yield Farming Development</li>
+                                </a>
+                                <a href="/dapps-development">
+                                  <li>DApp Development</li>
+                                </a>
+                              </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-service5" role="tabpanel"
+                              aria-labelledby="v-pills-service5-tab">
+                              <ul>
+                                <a href="/metaverse-development-company">
+                                  <li>Metaverse Development</li>
+                                </a>
+                                <a href="/metaverse-nft-marketplace-development">
+                                  <li>Metaverse NFT Marketplace Development</li>
+                                </a>
+                              </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-service6" role="tabpanel"
+                              aria-labelledby="v-pills-service6-tab">
+                              <ul>
+                                <a href="/token-development-company">
+                                  <li>Token Development Company</li>
+                                </a>
+                                <a href="/real-estate-tokenizations">
+                                  <li>Real Estate Tokenziation</li>
+                                </a>
+                                <a href="/art-tokenization">
+                                  <li>Art Tokenization</li>
+                                </a>
+                                <a href="/asset-tokenization-development-company">
+                                  <li>Asset Tokenization Development</li>
+                                </a>
+                                <a href="/tokenized-asset-offering">
+                                  <li>Tokenized Assets Offering Development</li>
+                                </a>
+                                <a href="/ico-script-software">
+                                  <li>ICO Development</li>
+                                </a>
+                                <a href="/sto-development">
+                                  <li>STO Development</li>
+                                </a>
+                                <a href="/ido-development">
+                                  <li>IDO/IEO Development</li>
+                                </a>
+                                <a href="/stable-coin-development">
+                                  <li>Stablecoin Development</li>
+                                </a>
+  
+                              </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-service7" role="tabpanel"
+                              aria-labelledby="v-pills-service7-tab">
+                              <ul>
+                                <a href="/web-app-development-services">
+                                  <li>Web & Mobile App Development</li>
+                                </a>
+                                <a href="/contact">
+                                  <li>UI/UX Development</li>
+                                </a>
+                                <a href="/cryptocurrency-payment-gateway-development">
+                                  <li>Crypto Payment Gateway Development</li>
+                                </a>
+                              </ul>
+                            </div>
+  
+                          </div>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+  
+            <li class="nav-item dropdown_megamenu-section-1">
+              <div class="dropdown nav-link">
+                <button class="navbar-mega-dropdown dropdown-toggle top-navbar-hover-new-design" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+  
+                </button>
+                <ul class="dropdown-menu">
+                  <div class="dropdown_megamenu-content dropdown_megamenu-content-dropdown-2">
+                    <div class='row'>
+                      <div class='col-lg-5  dropdown_megamenu-content-height-scroll'>
+                        <ul class="p-0">
+                          <li>
+  
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                              aria-orientation="vertical">
+                              <button class="nav-link active" id="v-pills-products1-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-products1" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-solid fa-cubes-stacked"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">NFT Clone</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/opensea-clone-script">
+                                      <li>NFT Marketplace Like Opensea</li>
+                                    </a>
+                                    <a href="/rarible-clone-script">
+                                      <li>NFT Marketplace Like Rarible</li>
+                                    </a>
+                                    <a href="/decentraland-clone-script">
+                                      <li>NFT Marketplace Like Decentraland</li>
+                                    </a>
+                                    <a href="/nft-marketplace-like-axieinfinity">
+                                      <li>NFT Marketplace Like Axie Infinity</li>
+                                    </a>
+                                    <a href="/solanart-clone-script">
+                                      <li>NFT Marketplace Like Solanart</li>
+                                    </a>
+                                    <a href="/cryptopunks-clone-script">
+                                      <li>NFT Marketplace Like CryptoPunk</li>
+                                    </a>
+                                    <a href="/nba-top-shot-clone-script">
+                                      <li>NFT Marketplace Like NBA Top Shot</li>
+                                    </a>
+                                    <a href="/sorare-clone-script">
+                                      <li>NFT Marketplace Like Sorare</li>
+                                    </a>
+                                    <a href="/superrare-like-nft-development">
+                                      <li>NFT Marketplace Like SuperRare</li>
+                                    </a>
+                                    <a href="/nft-marketplace-like-polkacity">
+                                      <li>NFT Marketplace Like Polkacity</li>
+                                    </a>
+                                    <a href="/binance-nft-marketplace-clone">
+                                      <li>NFT Marketplace Like Binance NFT</li>
+                                    </a>
+                                  </ul>
+                                </div>
+                              </button>
+                              <button class="nav-link" id="v-pills-product2-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-product2" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-solid fa-clone"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">DeFi Clone</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/pancakeswap-clone-script">
+                                      <li>DeFi Exchange Like Pancakeswap</li>
+                                    </a>
+                                    <a href="/sushiswap-clone-script">
+                                      <li>DeFi Exchange Like Sushiswap</li>
+                                    </a>
+                                    <a href="/uniswap-clone-script">
+                                      <li>DeFi Exchange Like Uniswap</li>
+                                    </a>
+                                    <a href="/bakeryswap-clone-script">
+                                      <li>DeFi Exchange Like Bakeryswap</li>
+                                    </a>
+                                    <a href="/justswap-clone-script">
+                                      <li>DeFi Exchange Like Justswap</li>
+                                    </a>
+                                  </ul>
+                                </div>
+                              </button>
+                              <button class="nav-link" id="v-pills-product3-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-product3" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-solid fa-rotate"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">Crypto Exchange Clone</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/cryptocurrency-exchange-script">
+                                      <li>Crypto Exchange Script</li>
+                                    </a>
+                                    <a href="/binance-clone-script">
+                                      <li>Crypto Exchange Like Binance</li>
+                                    </a>
+                                    <a href="/wazirx-clone-script">
+                                      <li>Crypto Exchange Like Wazirx</li>
+                                    </a>
+                                    <a href="/paxful-clone-script">
+                                      <li>Crypto Exchange Like Paxful</li>
+                                    </a>
+                                    <a href="/remitano-clone-script">
+                                      <li>Crypto Exchange Like Remitano</li>
+                                    </a>
+                                    <a href="/coinbase-clone-script">
+                                      <li>Crypto Exchange Like Coinbase</li>
+                                    </a>
+                                    <a href="/kucoin-clone-script">
+                                      <li>Crypto Exchange Like Kucoin</li>
+                                    </a>
+                                    <a href="/huobi-clone-script">
+                                      <li>Crypto Exchange Like Huobi</li>
+                                    </a>
+                                    <a href="/poloniex-clone-script">
+                                      <li>Crypto Exchange Like Poloniex</li>
+                                    </a>
+                                    <a href="/bithumb-clone-script">
+                                      <li>Crypto Exchange Like Bithumb</li>
+                                    </a>
+                                    <a href="/bitfinex-clone-script">
+                                      <li>Crypto Exchange Like Bitfinex</li>
+                                    </a>
+                                  </ul>
+                                </div>
+                              </button>
+                              <button class="nav-link" id="v-pills-product4-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-product4" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <div class="d-flex flex align-items-center text-start px-lg-2">
+                                  <div>
+                                    <i class="fa-solid fa-wallet"></i>
+                                  </div>
+                                  <div class="ms-3">
+                                    <p class="top-nav-text-1 mb-0">Crypto Wallet Clone</p>
+  
+                                  </div>
+                                  <div class="ms-auto">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                  </div>
+                                </div>
+                                <div class="mobile-dropdown-list-items d-none text-start mt-4">
+                                  <ul class="p-0">
+                                    <a href="/metamask-wallet-clone-script">
+                                      <li>Crypto Wallet Like Metamask</li>
+                                    </a>
+                                    <a href="/trust-wallet-clone-script-development">
+                                      <li>Crypto Wallet Like Trust Wallet</li>
+                                    </a>
+  
+                                  </ul>
+                                </div>
+                              </button>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class='col-lg-7 d-lg-block d-none'>
+                        <li>
+                          <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-products1" role="tabpanel"
+                              aria-labelledby="v-pills-products1-tab">
+                              <ul>
+                                <a href="/opensea-clone-script">
+                                  <li>NFT Marketplace Like Opensea</li>
+                                </a>
+                                <a href="/rarible-clone-script">
+                                  <li>NFT Marketplace Like Rarible</li>
+                                </a>
+                                <a href="/decentraland-clone-script">
+                                  <li>NFT Marketplace Like Decentraland</li>
+                                </a>
+                                <a href="/nft-marketplace-like-axieinfinity">
+                                  <li>NFT Marketplace Like Axie Infinity</li>
+                                </a>
+                                <a href="/solanart-clone-script">
+                                  <li>NFT Marketplace Like Solanart</li>
+                                </a>
+                                <a href="/cryptopunks-clone-script">
+                                  <li>NFT Marketplace Like CryptoPunk</li>
+                                </a>
+                                <a href="/nba-top-shot-clone-script">
+                                  <li>NFT Marketplace Like NBA Top Shot</li>
+                                </a>
+                                <a href="/sorare-clone-script">
+                                  <li>NFT Marketplace Like Sorare</li>
+                                </a>
+                                <a href="/superrare-like-nft-development">
+                                  <li>NFT Marketplace Like SuperRare</li>
+                                </a>
+                                <a href="/nft-marketplace-like-polkacity">
+                                  <li>NFT Marketplace Like Polkacity</li>
+                                </a>
+                                <a href="/binance-nft-marketplace-clone">
+                                  <li>NFT Marketplace Like Binance NFT</li>
+                                </a>
+                              </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-product2" role="tabpanel"
+                              aria-labelledby="v-pills-product2-tab">
+                              <ul>
+                                <a href="/pancakeswap-clone-script">
+                                  <li>DeFi Exchange Like Pancakeswap</li>
+                                </a>
+                                <a href="/sushiswap-clone-script">
+                                  <li>DeFi Exchange Like Sushiswap</li>
+                                </a>
+                                <a href="/uniswap-clone-script">
+                                  <li>DeFi Exchange Like Uniswap</li>
+                                </a>
+                                <a href="/bakeryswap-clone-script">
+                                  <li>DeFi Exchange Like Bakeryswap</li>
+                                </a>
+                                <a href="/justswap-clone-script">
+                                  <li>DeFi Exchange Like Justswap</li>
+                                </a>
+                              </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-product3" role="tabpanel"
+                              aria-labelledby="v-pills-product3-tab">
+                              <ul>
+                                <a href="/cryptocurrency-exchange-script">
+                                  <li>Crypto Exchange Script</li>
+                                </a>
+                                <a href="/binance-clone-script">
+                                  <li>Crypto Exchange Like Binance</li>
+                                </a>
+                                <a href="/wazirx-clone-script">
+                                  <li>Crypto Exchange Like Wazirx</li>
+                                </a>
+                                <a href="/paxful-clone-script">
+                                  <li>Crypto Exchange Like Paxful</li>
+                                </a>
+                                <a href="/remitano-clone-script">
+                                  <li>Crypto Exchange Like Remitano</li>
+                                </a>
+                                <a href="/coinbase-clone-script">
+                                  <li>Crypto Exchange Like Coinbase</li>
+                                </a>
+                                <a href="/kucoin-clone-script">
+                                  <li>Crypto Exchange Like Kucoin</li>
+                                </a>
+                                <a href="/huobi-clone-script">
+                                  <li>Crypto Exchange Like Huobi</li>
+                                </a>
+                                <a href="/poloniex-clone-script">
+                                  <li>Crypto Exchange Like Poloniex</li>
+                                </a>
+                                <a href="/bithumb-clone-script">
+                                  <li>Crypto Exchange Like Bithumb</li>
+                                </a>
+                                <a href="/bitfinex-clone-script">
+                                  <li>Crypto Exchange Like Bitfinex</li>
+                                </a>
+                              </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-product4" role="tabpanel"
+                              aria-labelledby="v-pills-product4-tab">
+                              <ul>
+                                <a href="/metamask-wallet-clone-script">
+                                  <li>Crypto Wallet Like Metamask</li>
+                                </a>
+                                <a href="/trust-wallet-clone-script-development">
+                                  <li>Crypto Wallet Like Trust Wallet</li>
+                                </a>
+  
+                              </ul>
+                            </div>
+  
+                          </div>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+  
+            <li class="nav-item dropdown_megamenu-section-2">
+              <div class="dropdown nav-link">
+                <button class="navbar-mega-dropdown dropdown-toggle top-navbar-hover-new-design" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </button>
+                <ul class="dropdown-menu">
+                  <div class="dropdown_megamenu-content-2">
+                    <div class='row'>
+                      <div class='col-lg-12'>
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <ul class="p-lg-0 ps-3">
+                            <a href="/about-us">
+                              <li>About Us</li>
+                            </a>
+                            <a id="#pdfform" href="https://assets.clarisco.com/PitchDeck.pdf">
+                              <li>Pitch Deck</li>
+                            </a>
+                            <a href="/team">
+                              <li>Team</li>
+                            </a>
+                            <a href="/privacy-policy">
+                              <li>Privacy & Policy</li>
+                            </a>
+                            <a href="/terms-conditions">
+                              <li>Terms & Conditions</li>
+                            </a>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link top-navbar-navlink top-navbar-hover-new-design" href="/portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link top-navbar-navlink top-navbar-hover-new-design" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link top-navbar-navlink top-navbar-hover-new-design" href="/contact">Contact
+                Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link top-navbar-navlink top-navbar-hover-new-design" href="/career">Career</a>
+            </li>
+            <li class="nav-item d-flex">
+              <a class="nav-link top-social-navlink" target="_blank" rel="noreferrer"
+                href="https://api.whatsapp.com/send?phone=919442430551&text=*Hi%20there!%20I%20am%20looking%20for%20your%20Services,%20Shall%20we%20Start%20the%20discussion*"><img
+                  loading="lazy" rel="preload" src="https://assets.clarisco.com/images/social-icons/whatsapp.webp"
+                  alt="social-icons" /></a>
+              <a class="nav-link top-social-navlink" target="_blank" href="skype:live:.cid.a0a438f91c1c9c5d?chat"
+                aria-label="72HDDXfJ7d" rel="noreferrer"><img loading="lazy" rel="preload"
+                  src="https://assets.clarisco.com/images/social-icons/skype.webp" alt="social-icons" /></a>
+              <a class="nav-link top-social-navlink" target="_blank" rel="noreferrer"
+                href="https://telegram.me/ClariscoSolutions"><img loading="lazy" rel="preload"
+                  src="https://assets.clarisco.com/images/social-icons/telegram.webp" alt="social-icons" /></a>
+            </li>
+            <li class="nav-item">
+              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Launch static backdrop modal
+              </button> -->
+              <a class="nav-link top-navbar-talk-experts-btn" href="/contact">TALK TO OUR EXPERTS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="clarisco-contact-advertisement-section">
+    <div class="d-flex flex-row justify-content-end"><i id="contact-advertisement-close" class="fa-solid fa-xmark"></i></div>
+    <a href="/contact"  target="_blank" rel="noreferrer"><img src="https://assets.clarisco.com/images/summer-sale.webp" alt="contact" /></a>
+  </div> -->
+
+  <div class="container-fluid py-5  blog-readmore-clarisco-site">
+    <div class="row">
+      <div class="container col-10">
+        <div class="row align-items-center row-cols-lg-2 row-cols-1 mt-5">
+          <div class="col">
+             <p class="post-item__meta post-item__meta--category mt-3 text-white"><%- blogdata.blog_category %>
+            </p> 
+             <h1 class="display-5 fw-bold text-white">
+              <%- blogdata.blog_title %>
+            </h1> 
+
+            <div>
+              <time class="post-item__meta post-item__meta--date text-white">
+                <%- blogdata.date %>
+              </time>
+            </div>
+
+            <div class="mt-3 text-start">
+              <span><i class="fa-solid fa-share-nodes"></i> Share: </span>
+              <a href="https://www.linkedin.com/cws/share?url=https://www.clarisco.com/<%- blogdata.blog_link %>" target="_blank"><i class="fa-brands fa-linkedin share-icons-style ms-2"></i> </a>
+              <a href="https://wa.me/?text=https://www.clarisco.com/<%- blogdata.blog_link %>" target="_blank"><i class="fa-brands fa-whatsapp ms-2"></i></a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.clarisco.com/<%- blogdata.blog_link %>" target="_blank"><i class="fa-brands fa-facebook share-icons-style ms-2"></i></a>
+              <a href="https://twitter.com/intent/tweet?url=https://www.clarisco.com/<%- blogdata.blog_link %>" target="_blank"><i class="fa-brands fa-x-twitter ms-2"></i></a>
+            
+              
+              
+            </div> 
+          </div>
+          <div class="col">
+            <img src=<%- blogdata.blogimg %> class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
+      <div class="container col-11 mx-auto">
+        <div class="row row-cols-lg-3 row-cols-1">
+          <div class="col-lg-11  mt-5 read-more-fontfamily mx-auto text-white">
+            <%- blogdata.blog %>
+          </div> 
+          <!-- <div class="col-lg-3 my-5 py-5 ms-2  sidebar">
+            <div class="row my-5">
+              <div class='card blog-page-side-card'>
+                <form class="contact-form" name="blogreadmorecontactform" id="blogreadmorecontactform">
+                  <h2 class="widget-title mt-3 mb-4">CONTACT-US</h2>
+                  <div class='row'>
+                    <div class='col'>
+                      <div>
+                        <div class="single-input border-bottom-blue mb-0 p-0">
+                          <span><i class="bi bi-person-fill"></i></span>
+                          <input type="text" name="name" placeholder="Enter Your Name" />
+                        </div>
+                        <label id="name-error" class="error" for="name"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col'>
+                      <div>
+                        <div class="single-input border-bottom-blue">
+                          <span><i class="bi bi-envelope"></i></span>
+                          <input type="email" name="email" class="align-items-center" placeholder="Enter Your Email" />
+                        </div>
+                        <label id="email-error" class="error" for="email"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col'>
+                      <div>
+                        <div class="single-input border-bottom-blue">
+                          <span><i class="bi bi-telephone-fill"></i></span>
+                          <input type="tel" name="phone" id="phone" class="align-items-center"
+                            placeholder="Enter Your Phone" />
+                        </div>
+                        <label id="phone-error" class="error" for="phone"></label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='row'>
+                    <div class='col'>
+                      <div>
+                        <div class="single-input border-bottom-blue">
+                          <span><i class="bi bi-person-lines-fill"></i></span>
+                          <input type="text" name="skype" placeholder="Enter Your Skype or Telegram Id" />
+                        </div>
+                        <label id="skype-error" class="error" for="skype"></label>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class='row'>
+                    <div class='col'>
+                      <div>
+                        <div class="single-input border-bottom-blue">
+                          <span><i class="bi bi-geo-alt"></i></span>
+                          <select class="form-select" aria-label="Default select example">
+                            <option value="1">India</option>
+                            <option value="2">Pak</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <label id="country-error" class="error" for="country"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col'>
+                      <div>
+                        <div class="single-input border-bottom-blue">
+                          <span><i class="bi bi-card-checklist"></i></span>
+                          <select class="form-select" aria-label="Default select example">
+                            <option value="1">NFT</option>
+                            <option value="2">Marketplace</option>
+                            <option value="3">swap</option>
+                          </select>
+                        </div>
+                        <label id="country-error" class="error" for="country"></label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="single-input border-bottom-blue">
+
+                      <span><i class="bi bi-pencil-square"></i></span>
+                      <textarea id="subject" class="pt-0" name="message" placeholder="Write Your Requirements.."
+                        style="height: 100px"></textarea>
+
+                    </div>
+                    <label id="subject-error" class="error" for="subject"></label>
+                  </div>
+                  <div class='row mt-3'>
+                    <div class='col-lg-12 text-center col-12'>
+                      <button type="submit" class="btn btnType1 px-4">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="new-top-banner-section-11 py-5" id="componentToScrollTo">
+    <div class="container mt-5">
+      <p class="mb-3 text-center top-banner-heading-1 fw-bold" data-aos="fade-up">We'd Love To Hear From You!</p>
+      <p class="text-center mb-5 top-banner-heading-2" data-aos="fade-up">
+        Know your requirement, our technical expert will
+        schedule a call and discuss your idea in detail. All information
+        will be kept confidential.
+      </p>
+      <div class="row justify-content-center contact-container-new-form flex-lg-row-reverse align-items-end">
+        <div class="col-lg-6" data-aos="fade-left">
+          <!-- <div class="text-center mt-4">
+            Get Started
+            <div class="card-body">
+              <p class="card-text" style="font-size: 24px;">Make Meeting @ Clarisco Solutions</p>
+              <p class="card-text mb-5">Get latest updates delivered right your inbox</p>
+              <div class="calendly-inline-widget" data-url="https://calendly.com/clariscosolutions?hide_gdpr_banner=1"
+                style="height:400px;"></div>
+              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+            </div>
+          </div> -->
+          <img src="https://assets.clarisco.com/images/Contact-form.webp" class="contact-form-footer-business d-lg-block d-none" alt="Contact-form" />
+         </div>
+        <div class="col-lg-6">
+          <div class="py-lg-4 ps-lg-3">
+            <h2 class="text-center mb-4 cont-d-1">Contact Us</h2>
+            <form class="new-contact-form" name="footercontact" id="footercontact" autocomplete="off">
+              <div class="input-group new-contact-form-section align-items-center">
+                <span class="input-group-text"> <span><i class="fa-solid fa-user"></i></span></span>
+            
+                <input type="text" class="form-control form-control-new-contact" placeholder="Enter Your Name"
+                  aria-label="footercontact" name="name" autocomplete="off">
+                  
+                <legend id="name-error" class="error" for="footercontact"></legend>
+              </div>
+  
+              <div class="input-group new-contact-form-section align-items-center">
+                <span class="input-group-text"> <span><i class="fa-solid fa-envelope"></i></span></span>
+                <input type="email" name="email" class="form-control form-control-new-contact"
+                  placeholder="Enter Your Email" aria-label="Name" autocomplete="off">
+              </div>
+  
+  
+              <div class="input-group new-contact-form-section d-flex flex-row new-contact-form-section-country">
+                <span class="input-group-text"> <span><i class="fa-solid fa-globe"></i></span></span>
+  
+                <input type="text" id="country_selector" name="country_selector" autocomplete="off"
+                  class="form-control-new-contact-2 me-auto" placeholder="Enter Your Country" value="" >
+  
+  
+                <!-- <label for="country_selector">Select a country here...</label> -->
+              </div>
+  
+  
+  
+  
+  
+              <div class="input-group new-contact-form-section d-flex flex-row new-contact-form-section-country">
+                <span class="input-group-text"> <span><i class="fa-solid fa-phone"></i></span></span>
+                <input class="form-control-new-contact-2 pt-2" type="tel" id="mob_phone" aria-label="Name" autocomplete="off"
+                  name="mob_phone" placeholder="Enter Mobile Number"> 
+                <input type="hidden" name="phone" id="phone" />
+              </div>
+              <!-- <div class="input-group new-contact-form-section">
+                <span class="input-group-text"> <span><i class="fa-solid fa-id-card"></i></span></span>
+                <input type="text" class="form-control form-control-new-contact"
+                  placeholder="Enter Your Skype or Telegram Id" aria-label="Name">
+              </div> -->
+              <div class="input-group new-contact-form-section new-contact-form-section-placeholder">
+                <span class="input-group-text"> <span><i class="fa-solid fa-id-card"></i></span></span>
+                <input type="text" name="socialMedia" id="meta_itemcondition"  class="form-control form-control-new-contact" autocomplete="off"
+                placeholder="Enter Whatsapp Number" aria-label="Name">
+                <select class="form- itemconditionmenu menu " name="socialMediaRequirement" id="socialMediaRequirement" aria-label="Default select example">
+                  <option value="Whatsapp">Whatsapp</option>
+                  <option value="Telegram">Telegram</option>
+                  <option value="Teams">Teams</option>
+                  <option value="Others">Others</option>
+                </select>
+              </div>
+  
+  
+  
+  
+  
+              <!-- <div mbsc-page class="demo-multiple-select input-group new-contact-form-section d-flex">
+              <span class="input-group-text pe-0"> <span><i class="bi bi-card-checklist"></i></span></span>
+              <div style="height:100%;width: 100% !important;">
+                <label >
+                  <input mbsc-input id="demo-multiple-select-input" name="requirement" placeholder="Please select service" data-dropdown="true" data-input-style="outline" data-label-style="stacked" data-tags="true" />    
+                </label>
+              
+          <select id="demo-multiple-select" multiple>
+            <option value="Crypto Exchange Development">Crypto Exchange Development</option>
+            <option value="Crypto Exchange Clone Script"> Crypto Exchange Clone Script</option>
+            <option value="NFT Marketplace Development">NFT Marketplace Development</option>
+            <option value="NFT Marketplace Clone Script"> NFT Marketplace Clone Script</option>
+            <option value="DeFi Development">DeFi Development</option>
+            <option value="DeFi Clone Script"> DeFi Clone Script</option>
+            <option value="Metaverse Development"> Metaverse Development</option>
+            <option value="Blockchain Solutions">Blockchain Solutions</option>
+            <option value="Cryptocurrency Development">Cryptocurrency Development</option>
+            <option value="Token Development"> Token Development</option>
+            <option value="Web 3.0 Development">Web 3.0 Development</option>
+            <option value="Crypto Wallet Development"> Crypto Wallet Development</option>
+            <option value="Others"> Others</option>
+          </select>
+              </div>
+          </div> -->
+  
+              <div class="input-group new-contact-form-section">
+                <span class="input-group-text"> <span><i class="fa-solid fa-list"></i></span></span>
+                <select class="form-select" name="requirement" id="requirement" aria-label="Default select example">
+                  <option value hidden>Select your services</option>
+                  <option value="Crypto Exchange Development">Crypto Exchange Development</option>
+                  <option value="Crypto Exchange Clone Script"> Crypto Exchange Clone Script</option>
+                  <option value="NFT Marketplace Development">NFT Marketplace Development</option>
+                  <option value="NFT Marketplace Clone Script"> NFT Marketplace Clone Script</option>
+                  <option value="DeFi Development">DeFi Development</option>
+                  <option value="DeFi Clone Script"> DeFi Clone Script</option>
+                  <option value="Metaverse Development"> Metaverse Development</option>
+                  <option value="Blockchain Solutions">Blockchain Solutions</option>
+                  <option value="Cryptocurrency Development">Cryptocurrency Development</option>
+                  <option value="Token Development"> Token Development</option>
+                  <option value="Web 3.0 Development">Web 3.0 Development</option>
+                  <option value="Crypto Wallet Development"> Crypto Wallet Development</option>
+                  <option value="Others"> Others</option>
+                </select>
+              </div>
+              <div class="input-group new-contact-form-section align-items-start">
+                <span class="input-group-text pt-0"> <span><i class="fa-solid fa-square-pen"></i></span></span>
+                <textarea id="message" name="message" class="form-control form-control-new-contact " autocomplete="off"
+                  placeholder="Write Your Requirements.." style="height: 100px;width: auto;"></textarea>
+              </div>
+              <!-- <input type="hidden" id="country_code_mobile" name="country_code_mobile"  > -->
+  
+              <!-- <div class="form-group mb-3">
+                <label for="captcha" class="captcha-lable mb-2">Verify you are a human</label>
+                <div class="captcha-verify">
+                  <span id="num1"></span> + <span id="num2"></span> =
+                  <input type="text" id="captcha" name="captcha" style="outline:none;" required>
+                  <label id="captcha-error" class="error" for="captcha"></label>
+                  <br>
+                </div>
+              </div> -->
+  
+  
+  <!-- 
+              <button class="contact-new-form-button" id="contact_submit_btn">
+                submit<i class="fa-solid fa-angle-right"></i>
+              </button> -->
+  
+              <div class="loader-button position-relative d-flex">
+              <button class="contact-new-form-button" id="contact_submit_btn">
+                submit<i class="fa-solid fa-angle-right"></i>
+              </button>
+              <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              </div>
+              
+  
+  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="new-footer-section">
+    <div class="container-fluid col-lg-10 py-4">
+      <div class="row align-items-start justify-content-around g-3">
+        <div class="col-lg-4 col-md-6 footer-logo-image" data-aos="fade-up">
+          <img rel="preload" class="navbar-brand-footer"
+            src="https://assets.clarisco.com/clarisco-images/clarisco-logo-white.svg" alt="logo" />
+          <div class="list-group mt-lg-3 mt-0">
+            <span class="mb-lg-3 footer-typo-head">Contact Us</span>
+            <a target="_blank" rel="noreferrer"
+              href="https://api.whatsapp.com/send?phone=919442430551&text=*Hi%20there!%20I%20am%20looking%20for%20your%20Services,%20Shall%20we%20Start%20the%20discussion*">
+              <div class="d-flex flex-row mb-3">
+                <div>
+                  <i class="fa-brands fa-whatsapp new-footer-icons-design-1" style="background-color: #29A61A;"></i>
+                </div>
+                <div>
+                  <p class="mb-0">Whatsapp</p>
+                  <p class="mb-0" style="font-size: 12px;"> +91 94424 30551</p>
+                </div>
+              </div>
+            </a>
+  
+            <a target="_blank" rel="noreferrer" href="https://telegram.me/ClariscoSolutions">
+              <div class="d-flex flex-row mb-3">
+                <div>
+                  <i class="fa-brands fa-telegram new-footer-icons-design-1" style="background-color: #039BE5;"></i>
+                </div>
+                <div>
+                  <p class="mb-0">Telegram</p>
+                  <p class="mb-0" style="font-size: 12px;">@ClariscoSolutions</p>
+                </div>
+              </div>
+            </a>
+  
+            <a target="_blank" rel="noreferrer" href="https://teams.live.com/l/invite/FEAQUx1rOI4OBlgMAE">
+              <div class="d-flex flex-row mb-3">
+                <div>
+                  <!-- <i class="fa-brands fa-skype new-footer-icons-design-1" style="background-color: #039BE5;"></i> -->
+                  <i class="bi bi-microsoft-teams new-footer-icons-design-1" style="background-color: #039BE5;"></i>
+                </div>
+                <div>
+                  <p class="mb-0">Teams</p>
+                  <p class="mb-0" style="font-size: 12px;">live:.cid.a0a438f91c1c9c5d</p>
+                </div>
+              </div>
+            </a>
+  
+            <a target="_blank" rel="noreferrer" href="https://mail.google.com/mail/?view=cm&fs=1&to=business@clarisco.com&su=SUBJECT&body=BODY&bcc=priyadharshini@clarisco.com" aria-label="priyadharshini@clarisco.com" >
+              <div class="d-flex flex-row mb-3">
+                <div>
+                  <i class="fa-solid fa-envelope new-footer-icons-design-1" style="background-color: #BF211E;"></i>
+                </div>
+                <div>
+                  <p class="mb-0">Mail</p>
+                  <p class="mb-0" style="font-size: 12px;">business@clarisco.com</p>
+                </div>
+              </div>
+            </a>
+  
+            <a target="_blank" rel="noreferrer" href="https://wa.me/+918438987286" aria-label="priyadharshini@clarisco.com" >
+              <div class="d-flex flex-row mb-3">
+                <div>
+                  <i class="fa-solid fa-user-tie new-footer-icons-design-1" style="background-color: #009688;"></i>
+                </div>
+                <div>
+                  <p class="mb-0">For Job Enquiry</p>
+                  <p class="mb-0" style="font-size: 12px;">+91 8438987286</p>
+                </div>
+              </div>
+            </a>
+  
+  
+          </div>
+          <div class="contact-list-bottom-new mt-2">
+            <a target="_blank" rel="noreferrer" href="https://clarisco.medium.com/"><i
+                class="fa-brands fa-medium me-1"></i><span style="color: black;">.</span></a>
+            <a target="_blank" rel="noreferrer" href="https://in.linkedin.com/company/clarisco-solutions-pvt-ltd"><i
+                class="fa-brands fa-linkedin me-1"></i><span style="color: black;">.</span></a>
+            <a target="_blank" rel="noreferrer"
+              href="https://www.facebook.com/Clarisco-Solutions-Pvt-Ltd-107532891804353"><i
+                class="fa-brands fa-facebook me-1"></i><span style="color: black;">.</span></a>
+            <!-- <a target="_blank" rel="noreferrer" href="https://x.com/clariscosol"><i
+                class="fa-brands fa-twitter me-1"></i><span style="color: black;">.</span></a> -->
+                
+  
+            <a target="_blank" rel="noreferrer" href="https://x.com/clariscosol"><i class="fa-brands fa-x-twitter"></i><span style="color: black;">.</span></a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/clariscosolutionspvtltd/"><i
+                class="fa-brands fa-instagram me-1"></i><span style="color: black;">.</span></a>
+            <a target="_blank" rel="noreferrer" href="https://www.reddit.com/user/Clarisco"><i
+                class="fa-brands fa-reddit me-1"></i><span style="color: black;">.</span></a>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCHg2V4u8LnlUDUGChFP57uA"><i
+                class="fa-brands fa-youtube me-1"></i><span style="color: black;">.</span></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+  
+          <div class="list-group footer-typo-new">
+            <span class="mb-lg-3 footer-typo-head">Top Services</span>
+            <a href="/cryptocurrency-development">Cryptocurrency Development<i class="fa fa-long-arrow-right"></i></a>
+            <a href="/cryptocurrency-exchange-development">Cryptocurrency Exchange Development<i
+                class="fa fa-long-arrow-right"></i></a>
+            <a href="/nft-token-development">Token Development<i class="fa fa-long-arrow-right"></i></a>
+            <a href="/nft-development-services-solutions">NFT Development<i class="fa fa-long-arrow-right"></i></a>
+            <a href="/blockchain-development-company">Blockchain Development<i class="fa fa-long-arrow-right"></i></a>
+            <a href="/defi-development-company">DeFi Development<i class="fa fa-long-arrow-right"></i></a>
+            <a href="/metaverse-development-company">Metaverse Development<i class="fa fa-long-arrow-right"></i></a>
+          </div>
+          <div class="list-group footer-typo-new mt-lg-4 mt-3">
+            <span class="mb-lg-3 footer-typo-head">US Branch</span>
+            <p class="mb-1"> 569 W. Commerce, TX 75208 <i class="bi bi-building me-1"></i></p>
+            <p class="mb-1">Dallas, United States</p>
+            <a target="_blank" rel="noreferrer"
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info@clarisco.com&amp;su=SUBJECT&amp;body=BODY&amp;bcc=priyadharshini@clarisco.com">
+              Info@clarisco.com<i class="bi bi-envelope me-1"></i></a>
+            <a href="tel:+13342473441" class="mb-1"> +1 334 247 3441<i class="bi bi-telephone me-1"></i></a>
+            <p class="mb-1"> Monday-Saturday: 10am - 7pm<i class="bi bi-clock me-1"></i></p>
+            <p class="mb-1"> Sunday: Closed<i class="bi bi-door-closed me-1"></i></p>
+          </div>
+        </div>
+  
+  
+  
+  
+  
+        <div class="col-lg-4 col-md-6 me-md-auto" data-aos="fade-up">
+          <div class="list-group footer-typo-new">
+            <span class="mb-lg-3 footer-typo-head">India Branch</span>
+            <p class="mb-1"> Plot No. 29, 30, Iswarya Nagar,<i class="bi bi-building me-1"></i></p>
+            <p class="mb-1">Madakkulam, Tamil Nadu 625003, India</p>
+            <a target="_blank" rel="noreferrer"
+              href=" https://mail.google.com/mail/?view=cm&fs=1&to=business@clarisco.com&su=SUBJECT&body=BODY&bcc=priyadharshini@clarisco.com">
+              Business@clarisco.com<i class="bi bi-envelope me-1"></i></a>
+            <a href="tel:+919442430551" class="mb-1"> +91 9442430551<i class="bi bi-telephone me-1"></i></a>
+            <p class="mb-1"> Monday-Saturday: 10am - 7pm<i class="bi bi-clock me-1"></i></p>
+            <p class="mb-1"> Sunday: Closed<i class="bi bi-door-closed me-1"></i></p>
+          </div>
+  
+          <div class="list-group footer-typo-new mt-lg-4 mt-3">
+            <span class="mb-lg-3 footer-typo-head">UK Branch</span>
+            <p class="mb-1"> Swan building, city center, Manchestor <i class="bi bi-building me-1"></i></p>
+            <!-- <p class="mb-1">Manchestor, England </p> -->
+            <a target="_blank" rel="noreferrer"
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mailto:alicehodge@clarisco.com&amp;su=SUBJECT&amp;body=BODY&amp;bcc=priyadharshini@clarisco.com">
+              Alicehodge@clarisco.com<i class="bi bi-envelope me-1"></i></a>
+            <a href="tel:+441618187383" class="mb-1"> +441618187383<i class="bi bi-telephone me-1"></i></a>
+            <p class="mb-1"> Monday-Saturday: 10am - 7pm<i class="bi bi-clock me-1"></i></p>
+            <p class="mb-1"> Sunday: Closed<i class="bi bi-door-closed me-1"></i></p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <div class="container-fluid py-2" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6 mx-auto text-center">
+          <div style="font-size: 14px;">Copyright ©  <span id="current-year"></span> <a href="https://www.clarisco.com/" target="_blank"
+              rel="noreferrer" class="fs-12">Clarisco Solutions Pvt Ltd. </a>All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      $(".dropdown_megamenu-content .nav-link").removeClass('active');
+      $('.dropdown-menu').on('click', function (e) {
+        e.stopPropagation();
+      });
+      $('.dropdown_megamenu-content .nav-link').click(function () {
+        $(this).toggleClass('active-mobile-tabs').siblings().removeClass('active-mobile-tabs');
+      });
+      $(document).ready(function () {
+        $("#top-serivces-open").click(function () {
+          $(".top-home-new-social-fixed-top-services").show();
+          $("#top-serivces-open").hide();
+          $("#top-serivces-close").show();
+          $("body").css("overflow", "hidden");
+        $("body").css("padding-right", "8px");
+        $(".navbar").css("padding-right", "8px");
+        });
+        $("#top-serivces-close").click(function () {
+          $(".top-home-new-social-fixed-top-services").hide();
+          $("#top-serivces-open").show();
+          $("#top-serivces-close").hide();
+          $("body").css("overflow", "scroll");
+        $("body").css("padding-right", "0px");
+        $(".navbar").css("padding-right", "0px");
+        });
+      });
+    } else {
+      $(document).ready(function () {
+        $("#top-serivces-open").click(function () {
+          $(".top-home-new-social-fixed-top-services").show();
+          $("#top-serivces-open").hide();
+          $("#top-serivces-close").show();
+        });
+        $("#top-serivces-close").click(function () {
+          $(".top-home-new-social-fixed-top-services").hide();
+          $("#top-serivces-open").show();
+          $("#top-serivces-close").hide();
+        });
+      });
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var wscroll = $(this).scrollTop();
+          if (wscroll > 50) {
+            // $("#shrink-navbar-top-banner").hide();
+            // $(".top-home-new-social-fixed").show();
+            $(".top-home-banner-navbar-section .navbar").css("background-color", "rgb(17 17 17)");
+          }
+          else {
+            // $("#shrink-navbar-top-banner").show();
+            // $(".top-home-new-social-fixed").hide();
+            $(".top-home-banner-navbar-section .navbar").css("background-color", "#ffffff1c");
+          }
+        });
+      });
+      // $(".dropdown_megamenu-content-dropdown-1 .nav-link").mouseenter(function () {
+      //   $("#v-pills-service1").removeClass('show active')
+      //   $("#v-pills-service2").removeClass('show active')
+      //   $("#v-pills-service3").removeClass('show active')
+      //   $("#v-pills-service4").removeClass('show active')
+      //   $("#v-pills-service5").removeClass('show active')
+      //   $("#v-pills-service6").removeClass('show active')
+      //   $("#v-pills-service7").removeClass('show active')
+      //   $(this).tab('show')
+      // });
+      // $(".dropdown_megamenu-content-dropdown-2 .nav-link").mouseenter(function () {
+      //   $("#v-pills-product1").removeClass('show active')
+      //   $("#v-pills-product2").removeClass('show active')
+      //   $("#v-pills-product3").removeClass('show active')
+      //   $("#v-pills-product4").removeClass('show active')
+      //   $(this).tab('show')
+      // });
+  
+      $(".dropdown-menu").mouseenter(function () {
+        // $(".dropdown-menu").css("pointer-events", "auto");
+        $("body").css("overflow", "hidden");
+        $("body").css("padding-right", "8px");
+        $(".navbar").css("padding-right", "8px");
+      });
+      $(".dropdown-menu").mouseleave(function () {
+        // $("body").css("pointer-events", "auto");
+        $("body").css("overflow", "scroll");
+        $("body").css("padding-right", "0px");
+        $(".navbar").css("padding-right", "0px");
+      });
+      
+      $(".top-home-new-social-fixed").mouseenter(function () {
+      // $(".dropdown-menu").css("pointer-events", "auto");
+      $("body").css("overflow", "hidden");
+      $("body").css("padding-right", "8px");
+      $(".navbar").css("padding-right", "8px");
+      $(".top-home-new-social-fixed").css("right", "8px");
+    });
+    $(".top-home-new-social-fixed").mouseleave(function () {
+      // $("body").css("pointer-events", "auto");
+      $("body").css("overflow", "scroll");
+      $("body").css("padding-right", "0px");
+      $(".navbar").css("padding-right", "0px");
+      $(".top-home-new-social-fixed").css("right", "0px");
+
+    });
+  
+      
+      // <===============Hyfiblockchainconsult==================>
+  
+      // $(".nav-over-content").mouseenter(function () {
+      //   // $(".dropdown-menu").css("pointer-events", "auto");
+      //   $("body").css("overflow", "hidden");
+      //   $("body").css("padding-right", "8px");
+      //   $(".navbar").css("padding-right", "8px");
+      // });
+      // $(".nav-over-content").mouseleave(function () {
+      //   // $("body").css("pointer-events", "auto");
+      //   $("body").css("overflow", "scroll");
+      //   $("body").css("padding-right", "0px");
+      //   $(".navbar").css("padding-right", "0px");
+      // });
+      // <===============Hyfiblockchainconsult==================>
+   
+    }
+  
+    // top-home-new-social-fixed
+  
+  
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("#contact-advertisement-close").click(function () {
+        $(".clarisco-contact-advertisement-section").hide();
+      });
+    });
+  
+  </script>
+  
+  
+  <script>
+    $(document).ready(function() {
+        $('#socialMediaRequirement').change(function() {
+            const selectedValue = $(this).val();
+            let placeholderText = 'Enter Contact Info';
+  
+            if (selectedValue === 'Whatsapp') {
+                placeholderText = 'Enter Whatsapp Number';
+            } else if (selectedValue === 'Telegram') {
+                placeholderText = 'Enter Telegram Username ';
+            } else if (selectedValue === 'Skype') {
+                placeholderText = 'Enter Skype Username ';
+            } else if (selectedValue === 'Others') {
+                placeholderText = 'Enter Other Contact Info';
+            }
+  
+            $('#meta_itemcondition').attr('placeholder', placeholderText);
+        });
+    });
+  </script>
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js" integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmonitor/1.2.4/scrollMonitor.js"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="../../build/js/countrySelect.js"></script>
+  
+  
+  
+<script>
+  // --- Mobile phone input ---
+  var phoneInput = document.querySelector("#mob_phone");
+  var hiddenInput = document.querySelector("#phone");
+
+  var phoneIti = window.intlTelInput(phoneInput, {
+    initialCountry: "IN",
+    separateDialCode: true,
+    hiddenInput: "phone",
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+  });
+
+  phoneInput.addEventListener('blur', function () {
+    var fullNumber = phoneIti.getNumber();
+    hiddenInput.value = fullNumber;
+    console.log("Full Number:", fullNumber);
+  });
+
+  // --- Country selector input ---
+  var countryInput = document.querySelector("#country_selector");
+
+  var countryIti = window.intlTelInput(countryInput, {
+    initialCountry: "IN",
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+    separateDialCode: false,
+  });
+
+  // Set initial country name
+  countryInput.value = countryIti.getSelectedCountryData().name;
+
+  // When country changes, update mobile phone input country
+  countryInput.addEventListener('countrychange', function () {
+    var selectedCountry = countryIti.getSelectedCountryData();
+    countryInput.value = selectedCountry.name;
+
+    // Update phone input country
+    phoneIti.setCountry(selectedCountry.iso2);
+    console.log("Phone input country set to:", selectedCountry.iso2);
+  });
+</script>
+  
+  <script>
+    // Generate random numbers for the CAPTCHA
+    // function generateCaptcha() {
+    //   var num1 = Math.floor(Math.random() * 10);
+    //   var num2 = Math.floor(Math.random() * 10);
+  
+    //   document.getElementById('num1').textContent = num1;
+    //   document.getElementById('num2').textContent = num2;
+    // }
+  
+    // // Validate the CAPTCHA when the form is submitted
+    // function validateCaptcha(event) {
+    //   event.preventDefault();
+  
+    //   var captchaInput = document.getElementById('captcha');
+    //   var userAnswer = parseInt(captchaInput.value);
+    //   var num1 = parseInt(document.getElementById('num1').textContent);
+    //   var num2 = parseInt(document.getElementById('num2').textContent);
+  
+    //   // Calculate the expected sum
+    //   var expectedSum = num1 + num2;
+  
+    //   // Check if the user's answer is correct
+    //   if (userAnswer === expectedSum) {
+    //     // alert('CAPTCHA is correct!');
+    //     // You can add additional form submission logic here
+    //   } else {
+    //     // alert('CAPTCHA is incorrect. Please try again.');
+    //     // Reset the CAPTCHA
+    //     captchaInput.value = '';
+    //     generateCaptcha();
+    //   }
+    // }
+  
+    // // Generate the initial CAPTCHA when the page loads
+    // generateCaptcha();
+  
+    // // Attach the form submission event listener
+    // var form = document.querySelector('form');
+    // form.addEventListener('submit', validateCaptcha);
+  </script>
+  
+  
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPP6XNS" height="0"
+      width="0"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- <script src="https://unpkg.com/country-data@3.0.0/country-data.js"></script> -->
+  
+  <script src="../../build/js/jQuery.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"
+    integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="../../build/js/jQuery_Validate.js"
+    integrity="sha512-HBQdyTUPZFC2dXlQzdVXaF6PcoY9C8mP39DNM1lHZR5stjuS0mtnv5NJmsrZjiYzCN2ppiPL77sY0AJcCNaSYw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
+  
+  
+  <script src="../../build/js/countrySelect.js"></script> -->
+  
+  <!-- <script>
+     $(document).ready(function(){
+        var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+          removeItemButton: true,
+          maxItemCount:3,
+          searchResultLimit:5,
+          renderChoiceLimit:5
+        });
+      });
+  </script> -->
+  
+  
+  <script>
+  
+  </script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      disable: function () {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      }
+    })
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- <script type="text/javascript">
+  var verifyCallback = function (response) {
+  document.getElementById("gtag").value = response;
+  document.getElementById("gtag-error").innerHTML = "";
+  //alert(response);
+  };
+  var widgetId1;
+  var widgetId2;
+  var onloadCallback = function () {
+  // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
+  // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
+  
+  grecaptcha.render('example3', {
+    'sitekey': '6LfG6-MgAAAAAE3kTSiR5AmY2bnW6aeDLoaM1HYu',
+    'callback': verifyCallback,
+    'theme': 'light'
+  });
+  };
+  </script>
+  
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+  </script> -->
+  
+  
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript" class="wdfrre">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6188bce46bb0760a4941920e/1fjv23nun';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
+  <script>
+    var btn = $('#button');
+  
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+  
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+  </script>
+  
+  <Script>
+  
+    $("#footercontact").validate({
+      rules: {
+        name: {
+          required: true,
+        },
+        email: {
+          required: true,
+        },
+        mob_phone: {
+          required: true,
+          digits: true
+        },
+        skype: {
+          required: true,
+        },
+        country_selector: {
+          required: true,
+        },
+        message: {
+          required: true,
+        },
+        // captcha: {
+        //   required: true,
+        // }
+  
+      },
+      messages: {
+        name: {
+          required: "Enter Name",
+        },
+        email: {
+          required: "Enter email",
+        },
+        mob_phone: {
+          required: "Enter phone",
+          digits: "Allowed number only"
+        },
+        skype: {
+          required: "Enter skype",
+        },
+        country_selector: {
+          required: "Enter Country",
+        },
+        message: {
+          required: "Enter message",
+        },
+        // captcha: {
+        //   required: 'CAPTCHA is incorrect. Please try again',
+        // }
+  
+      },
+  
+      submitHandler: function (form, e) {
+        //alert('it works')
+        $( "#contact_submit_btn" ).prop( "disabled", true );
+  
+        $("#contact_submit_btn-2").hide();
+                $(".spinner-border").show()
+        $.ajax({
+          type: 'POST',
+          url: window.location.origin+'/contact_submit',
+          data: $("#footercontact").serialize(),
+          dataType: "json",
+          success: function (result) {
+  
+            if (result.status == true) {
+              window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "generate_lead" });
+              window.location.href = "/thankyou";
+  
+            }
+            else {
+              res.status(404).render('common/404', { title: " Sorry, page not found" });
+            }
+  
+          },
+          error: function (error) {
+  
+          }
+        });
+  
+        // $("#country_code_mobile").val($(".iti__selected-flag").attr('title'));
+        // console.log($(".selected-dial-code").text());
+        // console.log($(".iti__selected-flag").attr('title'));
+        // // if (value == '') {
+        // //   $("#gtag-error").text("Please Verify");
+        // // }
+        // // else {
+        // console.log($("#footercontact").serialize());
+  
+        // $.ajax({
+        //   type: 'POST',
+        //   url: 'https://www.clarisco.com/contact_submit',
+        //   data: $("#footercontact").serialize(),
+        //   dataType: "json",
+        //   success: function (result) {
+  
+        //     if (result.status == true) {
+  
+        //       window.location.href = "/thankyou";
+  
+        //     }
+        //     else {
+        //       res.status(404).render('common/404', { title: " Sorry, page not found" });
+        //     }
+  
+        //   },
+        //   error: function (error) {
+  
+        //   }
+        // });
+  
+  
+        //  }
+  
+      },
+  
+    }); 
+  </Script>
+  
+  
+  <!-- <Script>
+  
+    $("#footercontact").validate({
+      
+  
+      submitHandler: function (form, e) {
+        //alert('it works')
+  
+  
+        $.ajax({
+          type: 'POST',
+          url: 'https://www.clarisco.com/contact_submit',
+          data: $("#footercontact").serialize(),
+          dataType: "json",
+          success: function (result) {
+  
+            if (result.status == true) {
+  
+              window.location.href = "/thankyou";
+  
+            }
+            else {
+              res.status(404).render('common/404', { title: " Sorry, page not found" });
+            }
+  
+          },
+          error: function (error) {
+  
+          }
+        });
+  
+       
+      },
+  
+    }); 
+  </Script> -->
+  <script>
+    $(".itemconditionmenu").change(function() {
+    var conditionofitem = $(this).val();
+    //$("#meta_itemcondition").val(conditionofitem);
+    document.getElementById("meta_itemcondition").placeholder = conditionofitem;
+  });
+    </script>
+  
+    <script>
+  
+  
+  
+    </script>
+  
+  </body>
+  
+  </html>

@@ -1,0 +1,148 @@
+# Clarisco Solutions Private Limited
+
+> Clarisco is a Blockchain, AI & IoT software development company delivering end-to-end technology solutions to startups, enterprises, and corporates globally. Founded by Priyadharshini Suriyanarayanan, the company has 12+ years of experience, 650+ product launches, and 800+ clients worldwide. Core expertise spans AI/ML, Blockchain, Web3, DeFi, NFT, Crypto Exchange, Trading Bots, Game Development, and Custom Software.
+
+Headquarters: Plot No. 29, 30, Iswarya Nagar, Madakkulam, Tamil Nadu 625003, India
+Contact: business@clarisco.com | +91 94424 30551
+Founder & CEO: Priyadharshini Suriyanarayanan (12+ years in AI, Web3, enterprise software)
+
+## Artificial Intelligence
+
+- [AI Development Services](https://www.clarisco.com/ai): Full-stack AI development for businesses
+- [AI & ML Development](https://www.clarisco.com/ai-ml-development-company): Custom machine learning models and AI systems
+- [Enterprise AI Development](https://www.clarisco.com/enterprise-ai-development-company): AI solutions for large-scale enterprise use cases
+- [Generative AI Development](https://www.clarisco.com/generative-ai-development-company): LLM-powered content and automation systems
+- [Generative AI Consulting](https://www.clarisco.com/generative-ai-consulting-services): Strategy and implementation for generative AI
+- [AI Agent Development](https://www.clarisco.com/ai-agent-development-company): Autonomous AI agent systems
+- [AI Co-Pilot Development](https://www.clarisco.com/ai-copilot-development-company): AI-assisted workflow tools
+- [AI Chatbot Development](https://www.clarisco.com/ai-chatbot-development-company): Intelligent conversational bots
+- [Conversational AI Development](https://www.clarisco.com/conversational-ai-development-company): NLP-powered dialogue systems
+- [Predictive AI Development](https://www.clarisco.com/predictive-ai-development-company): Forecasting and analytics AI
+- [Adaptive AI Development](https://www.clarisco.com/adaptive-ai-development-company): Self-learning AI systems
+- [AI E-Commerce Platform Development](https://www.clarisco.com/ai-ecommerce-platform-development-company): AI-powered online retail platforms
+- [AI App Development](https://www.clarisco.com/ai-powered-app-development-company): AI-integrated mobile and web apps
+- [AI as a Service](https://www.clarisco.com/ai-as-a-service-company): Managed AI capabilities on demand
+- [Hire AI Developers](https://www.clarisco.com/hire-ai-developers): Dedicated AI developer staffing
+
+## Blockchain
+
+- [Blockchain Development Company](https://www.clarisco.com/blockchain-development-company): Custom blockchain solutions across industries
+- [Blockchain Consulting](https://www.clarisco.com/blockchain-consulting): Strategic blockchain advisory
+- [Binance Smart Chain Development](https://www.clarisco.com/binance-smart-Chain): BSC-based dApp and token development
+- [EOS Blockchain Development](https://www.clarisco.com/eos-blockchain-development): EOS-based application development
+- [Blockchain for Finance](https://www.clarisco.com/blockchain-for-finance): Financial sector blockchain solutions
+- [Blockchain for Pharma](https://www.clarisco.com/blockchain-for-pharma-industry): Supply chain and compliance for pharma
+- [POC Development](https://www.clarisco.com/poc-development): Proof of Concept for blockchain projects
+
+## RWA Tokenization
+
+- [RWA Tokenization Platform Development](https://www.clarisco.com/rwa-tokenization-platform-development): Real-world asset tokenization infrastructure
+- [Asset Tokenization Development](https://www.clarisco.com/asset-tokenization-development-company): Digital asset tokenization platforms
+- [Real Estate Tokenization](https://www.clarisco.com/real-estate-tokenizations): Fractional real estate on blockchain
+- [Gold Tokenization](https://www.clarisco.com/gold-tokenization-development-company): Gold-backed digital token platforms
+- [Carbon Credits Tokenization](https://www.clarisco.com/carbon-credits-tokenization-development): Environmental credit tokenization
+- [Art Tokenization](https://www.clarisco.com/art-tokenization): Digital ownership for art assets
+- [STO Development](https://www.clarisco.com/sto-development-company): Security Token Offering platforms
+
+## Cryptocurrency Exchange
+
+- [Cryptocurrency Exchange Development](https://www.clarisco.com/cryptocurrency-exchange-development): Full-featured crypto exchange platforms
+- [White-Label Crypto Exchange](https://www.clarisco.com/white-label-crypto-exchange): Ready-to-launch branded exchange solutions
+- [Centralized Exchange Development](https://www.clarisco.com/centralized-crypto-exchange-development): CEX platform development
+- [Decentralized Exchange Development](https://www.clarisco.com/decentralized-exchange-development): DEX platform development
+- [P2P Crypto Exchange](https://www.clarisco.com/p2p-cryptocurrency-exchange-development): Peer-to-peer trading platforms
+- [Crypto Derivatives Exchange](https://www.clarisco.com/crypto-derivatives-exchange-development-company): Futures and options trading platforms
+- [Binance Clone Script](https://www.clarisco.com/binance-clone-script): Binance-like exchange development
+- [Coinbase Clone Script](https://www.clarisco.com/coinbase-clone-script): Coinbase-like exchange development
+
+## Token Development
+
+- [Token Development Company](https://www.clarisco.com/token-development-company): Custom token creation across blockchains
+- [Cryptocurrency Development](https://www.clarisco.com/cryptocurrency-development): Full cryptocurrency creation services
+- [Stablecoin Development](https://www.clarisco.com/stable-coin-development): Pegged and algorithmic stablecoins
+- [AI Token Development](https://www.clarisco.com/ai-token-development): AI-integrated token ecosystems
+- [ERC20 Token Development](https://www.clarisco.com/erc20-token-development): Ethereum ERC20 standard tokens
+- [BEP20 Token Development](https://www.clarisco.com/bep20-token-development): Binance Smart Chain tokens
+- [TRC20 Token Development](https://www.clarisco.com/trc20-token-development): TRON-based token development
+- [Meme Coin Development](https://www.clarisco.com/how-to-launch-your-own-meme-coin): Meme coin launch services
+- [ICO Development](https://www.clarisco.com/ico-script-software): Initial Coin Offering platforms
+- [IDO Development](https://www.clarisco.com/ido-development): Initial DEX Offering platforms
+
+## DeFi
+
+- [DeFi Development Company](https://www.clarisco.com/defi-development-company): Decentralized finance platform development
+- [DeFi dApp Development](https://www.clarisco.com/defi-application-development-services): Custom DeFi application development
+- [DeFi Lending & Borrowing Platform](https://www.clarisco.com/defi-lending-borrowing-platform): Decentralized lending protocol development
+- [DeFi Smart Contract Development](https://www.clarisco.com/defi-smart-contract-development-company): Audited smart contracts for DeFi
+- [DeFi Staking Platform](https://www.clarisco.com/defi-staking-platform-development): Token staking and rewards platforms
+- [DeFi Yield Farming](https://www.clarisco.com/defi-yield-farming-development): Yield optimization protocol development
+- [PancakeSwap Clone](https://www.clarisco.com/pancakeswap-clone-script): PancakeSwap-like DEX development
+- [Uniswap Clone](https://www.clarisco.com/uniswap-clone-script): Uniswap-like AMM development
+
+## Crypto Wallet & Payments
+
+- [Crypto Wallet Development](https://www.clarisco.com/cryptocurrency-wallet-development-company): Secure multi-chain wallet development
+- [Crypto Payment Gateway](https://www.clarisco.com/cryptocurrency-payment-gateway-development): Merchant crypto payment solutions
+- [MetaMask-like Wallet](https://www.clarisco.com/metamask-wallet-clone-script): Browser extension wallet development
+- [Trust Wallet-like Wallet](https://www.clarisco.com/trust-wallet-clone-script-development): Mobile crypto wallet development
+
+## Trading Bots
+
+- [Crypto Trading Bot Development](https://www.clarisco.com/crypto-trading-bot-development): Automated crypto trading systems
+- [Arbitrage Bot Development](https://www.clarisco.com/crypto-arbitrage-bot-development-company): Cross-exchange arbitrage bots
+- [Market Making Bot](https://www.clarisco.com/crypto-market-making-bot-development): Liquidity provision bots
+- [Flash Loan Arbitrage Bot](https://www.clarisco.com/flash-loan-arbitrage-bot-development): Flash loan-based arbitrage automation
+- [Grid Trading Bot](https://www.clarisco.com/grid-trading-bot-development): Grid strategy trading bots
+- [DCA Bot Development](https://www.clarisco.com/dca-trading-bot-development-company): Dollar-cost averaging bots
+
+## NFT
+
+- [NFT Development Services](https://www.clarisco.com/nft-development-services-solutions): End-to-end NFT development
+- [NFT Marketplace Development](https://www.clarisco.com/nft-marketplace-development): Custom NFT marketplace platforms
+- [NFT Minting Platform](https://www.clarisco.com/nft-minting-platform-development): NFT creation and minting tools
+- [White Label NFT Marketplace](https://www.clarisco.com/white-label-nft-marketplace-development): Ready-to-deploy NFT marketplace
+- [OpenSea Clone](https://www.clarisco.com/opensea-clone-script): OpenSea-like NFT marketplace development
+
+## Web3 & Metaverse
+
+- [Web3 Development](https://www.clarisco.com/web3-development-company): Decentralized Web3 application development
+- [Metaverse Development](https://www.clarisco.com/metaverse-development-company): Immersive metaverse platform development
+- [Metaverse NFT Marketplace](https://www.clarisco.com/metaverse-nft-marketplace-development): NFT trading inside metaverse environments
+
+## Game Development
+
+- [Blockchain Game Development](https://www.clarisco.com/blockchain-game-development): Web3 and blockchain-integrated games
+- [Play-to-Earn Game Development](https://www.clarisco.com/play-to-earn-game-development): P2E game platforms with token rewards
+- [Rummy Game Development](https://www.clarisco.com/rummy-game-development): Online rummy platforms
+- [Sports Betting dApp](https://www.clarisco.com/sports-betting-dapp): Decentralized sports betting platforms
+
+## Prediction Markets
+
+- [Polymarket Clone Script](https://www.clarisco.com/polymarket-clone-script): Polymarket-like prediction market platform
+- [Kalshi Clone Script](https://www.clarisco.com/kalshi-clone-script): Kalshi-like event contract trading platform
+
+## Custom Software & Enterprise
+
+- [Custom Software Development](https://www.clarisco.com/custom-software-development-company): Bespoke software for any industry
+- [Web Application Development](https://www.clarisco.com/custom-web-application-development-company): Scalable web app development
+- [Neo Banking Solutions](https://www.clarisco.com/neo-banking-solution-provider): Digital banking platform development
+- [Cryptocurrency MLM Software](https://www.clarisco.com/cryptocurrency-mlm-software): Crypto-based MLM platform development
+- [VFX Services](https://www.clarisco.com/vfx-services): Visual effects for games and media
+- [Hire Dedicated Developers](https://www.clarisco.com/hire-developers): On-demand developer staffing
+
+## Company
+
+- [About Us](https://www.clarisco.com/about-us): Company history, team, and values
+- [Portfolio](https://www.clarisco.com/portfolio): Past projects and case studies
+- [Case Studies](https://www.clarisco.com/case-studies): Detailed client success stories
+- [Industries](https://www.clarisco.com/industries): Sectors served by Clarisco
+- [Blog](https://www.clarisco.com/blog): Technical articles and industry insights
+- [Career](https://www.clarisco.com/career): Open roles at Clarisco
+- [Contact](https://www.clarisco.com/contact): Get in touch or request a quote
+
+## Optional
+
+- [Privacy Policy](https://www.clarisco.com/privacy-policy): Data handling and privacy terms
+- [Terms & Conditions](https://www.clarisco.com/terms-conditions): Terms of service
+- [Refund Policy](https://www.clarisco.com/refund-policy): Refund and cancellation policy
+- [Events](https://www.clarisco.com/events): Conferences and events Clarisco participates in

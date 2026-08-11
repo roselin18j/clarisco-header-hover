@@ -1,0 +1,194 @@
+<section class="nw-bann-sec-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h3 class="mb-3 nw-w-head-3 fw-bold text-center">From idea to interface in seconds.</h3>
+                <div class="card">
+                    <div class="card-header">
+                        <p class="mb-0"> Describe the screen. We'll build it. You'll refine it.</p>
+                    </div>
+                    <div class="card-body custom-cursor-sec">
+                        <img src="https://assets.clarisco.com/clarisco-images/nw-landing-page/weserve/S3.webp"
+                            class="fake-cursor" id="fakeCursor">
+                        <div class="row justify-content-around">
+                            <div class="col-xl-3 col-lg-5 position-relative">
+                                <img src="https://assets.clarisco.com/clarisco-images/nw-landing-page/weserve/S1.webp"
+                                    alt="S1" class="float-chat-img" id="floatImg1">
+                                <div class="nw-bann-5-chat">
+                                    <div class="bann-5-chat-header">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                        <p class="mb-0">Chat with us!</p>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                    <div class="bann-5-chat-middle" id="chatBox">
+                                        <div class="d-flex flex-row gap-2">
+                                            <div class="chat-prof"><i class="fa-solid fa-comment-dots"></i></div>
+                                            <div class="chat-mssg">
+                                                <div class="chat-mssg-cont">Hi, I'm Aria, your AI assistant. What can I
+                                                    help you with today?</div>
+                                                <div class="chat-mssg-cont">
+                                                    Ask me anything...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bann-5-chat-bottom">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Write a messge">
+                                            <button class="input-group-text"><i
+                                                    class="fa-solid fa-location-arrow"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 position-relative">
+
+                                <img src="https://assets.clarisco.com/clarisco-images/nw-landing-page/weserve/S2.webp"
+                                    alt="S1" class="float-chat-img" id="floatImg2">
+                                <img src="https://assets.clarisco.com/clarisco-images/nw-landing-page/weserve/Demo.webp"
+                                    alt="GENAI" class="img-fluid">
+                            </div>
+                            <div class="col-xl-3 col-lg-5 d-lg-none d-xl-block">
+                                <img src="https://assets.clarisco.com/clarisco-images/nw-landing-page/weserve/Trade.webp"
+                                    alt="Trade" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script id="chat-logic">
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const input = document.querySelector(".bann-5-chat-bottom input");
+        const sendBtn = document.querySelector(".bann-5-chat-bottom button");
+        const chatBox = document.getElementById("chatBox");
+
+        // ✅ Exit safely if elements not found
+        if (!input || !sendBtn || !chatBox) return;
+
+        sendBtn.addEventListener("click", sendMessage);
+
+        input.addEventListener("keypress", function (e) {
+            if (e.key === "Enter") sendMessage();
+        });
+
+        function sendMessage() {
+            const message = input.value.trim();
+            if (!message) return;
+
+            appendUserMessage(message);
+            appendBotMessage();
+
+            input.value = "";
+        }
+
+        function appendUserMessage(text) {
+            const html = `
+        <div class="d-flex flex-row gap-2 flex-row-reverse">
+            <div class="chat-prof"><i class="fa-solid fa-comment-dots"></i></div>
+            <div class="chat-mssg">
+                <div class="chat-mssg-cont text-end">${text}</div>
+            </div>
+        </div>`;
+            chatBox.insertAdjacentHTML("beforeend", html);
+            scrollToBottom();
+        }
+
+        function appendBotMessage() {
+            const html = `
+        <div class="d-flex flex-row gap-2">
+            <div class="chat-mssg">
+                <div class="chat-mssg-cont chat-mssg-cont-2">
+                    Your message is with us - we'll get back to you soon.
+                </div>
+            </div>
+        </div>`;
+            chatBox.insertAdjacentHTML("beforeend", html);
+            scrollToBottom();
+        }
+
+        function scrollToBottom() {
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const el2 = document.getElementById("floatImg2");
+
+        function moveRandom2() {
+            const top = Math.random() * 80;
+            const left = Math.random() * 80;
+
+            el2.style.top = top + "%";
+            el2.style.left = left + "%";
+        }
+
+        moveRandom2();
+        setInterval(moveRandom2, 3000);
+
+
+        const el1 = document.getElementById("floatImg1");
+
+        function moveRandom1() {
+            const top = Math.random() * (55 - 1) + 1;
+            const left = Math.random() * 80;
+
+            el1.style.top = top + "%";
+            el1.style.left = left + "%";
+        }
+
+        moveRandom1();
+        setInterval(moveRandom1, 3000);
+
+    });
+</script>
+
+<script>
+    const cursor = document.getElementById("fakeCursor");
+    const section = document.querySelector(".custom-cursor-sec");
+
+    let mouseX = 0, mouseY = 0;
+
+    section.addEventListener("mouseenter", () => {
+        cursor.style.display = "block";
+    });
+
+    section.addEventListener("mouseleave", () => {
+        cursor.style.display = "none";
+    });
+
+    document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursor.style.left = mouseX + "px";
+        cursor.style.top = mouseY + "px";
+    });
+
+    window.addEventListener("scroll", () => {
+        const rect = section.getBoundingClientRect();
+        const isInsideSection =
+            mouseX >= rect.left &&
+            mouseX <= rect.right &&
+            mouseY >= rect.top &&
+            mouseY <= rect.bottom;
+
+        if (isInsideSection) {
+            cursor.style.display = "block";
+            section.style.cursor = "none";
+        } else {
+            cursor.style.display = "none";
+            section.style.cursor = "default";
+        }
+    });
+
+
+</script>

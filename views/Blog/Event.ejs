@@ -1,0 +1,376 @@
+<%- include('../common-new/header') %>
+
+    <body class="nw-banner-wt-1">
+
+        <%- include('../common-new/navbar') %>
+
+            <section class="pt-lg-5 pb-5 top-nw-pad-mt nw-evnt-wt-1">
+                <div class="container-fluid col-lg-9">
+                    <h1 class="text-center fw-bold new-about-our-journey mb-3" data-aos="fade-up">Events</h1>
+                    <p class="text-center mb-4" style="color: #0000009c;" data-aos="fade-up">Moments That Make Us, Us!
+                    </p>
+                    <div class="row g-md-4 g-2 justify-content-center flex-xl-row-reverse" data-aos="fade-up">
+                        <div class="col-xl-4 col-md-6">
+                            <div class="swiper rightSwiperTop heit-w-1 h-100">
+                                <div class="swiper-wrapper" id="eventSlides5"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="row g-md-4 g-2">
+                                <div class="col-lg-8 col-8">
+                                    <div class="swiper leftSwipertopleft heit-w-1">
+                                        <div class="swiper-wrapper" id="eventSlides1"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-4">
+                                    <div class="swiper leftSwipertopright heit-w-1">
+                                        <div class="swiper-wrapper" id="eventSlides2"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-4">
+                                    <div class="swiper leftSwiperBottomleft heit-w-1">
+                                        <div class="swiper-wrapper" id="eventSlides3"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-8">
+                                    <div class="swiper leftSwiperBottomright heit-w-1">
+                                        <div class="swiper-wrapper" id="eventSlides4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p class="text-center mb-4 mt-5" style="color: #0000009c;" data-aos="fade-up">At Clarisco Solutions,
+                        every event tells a story of collaboration, innovation, and celebration.
+                        From team meetups and workshops to industry conferences and community initiatives, our events
+                        reflect the energy, creativity, and camaraderie that define our culture.</p>
+                    <p class="text-center" style="color: #0000009c;" data-aos="fade-up">Get in to see life at Clarisco
+                        through our lens.</p>
+                </div>
+            </section>
+
+
+            <script>
+                const events = [
+                    {
+                        desc: "Our team celebrated Christmas with festive cheer creating memorable moments for everyone.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/image1/1.webp"
+                    },
+                    {
+                        desc: "A meaningful festival celebration with our CEO, and Managing Director, and colleagues.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/image1/2.webp"
+                    },
+                    {
+                        desc: "Our team celebrated Women’s Day with distinguished guests, led by our CEO and MD.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/image1/3.webp"
+                    },
+                    {
+                        desc: "The women at Clarisco came together to celebrate Women’s day with our CEO.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/image1/4.webp"
+                    },
+                    {
+                        desc: "Our team celebrated the successful launch of Chandrayaan 3 with pride and excitement.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/image1/5.webp"
+                    },
+                    {
+                        desc: "Ex-IPS Mr. Annamalai inaugurated our new building, warmly greeting our CEO and MD.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/image1/6.webp"
+                    }
+                ];
+
+                const container = document.getElementById("eventSlides1");
+
+                container.innerHTML = events.map(item => `
+    <div class="swiper-slide">
+        <div class="card-img">
+            <img src="${item.img}" alt="${item.desc}" loading="lazy">
+            <div class="overlay">
+                <p class="hd-22">${item.desc}</p>
+            </div>
+        </div>
+    </div>
+`).join('');
+            </script>
+
+            <script>
+                const events2 = [
+                    {
+                        desc: "Our MD met the CM of Puducherry Mr. Rangasamy to strengthen ties between government and industry initiatives.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image2/1.webp"
+                    },
+                    {
+                        desc: "Our CEO and MD distributed essential goods and food to children at a local orphanage.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image2/2.webp"
+                    },
+                    {
+                        desc: "Our CEO and MD gifted an e-bike to a deserving individual with care and commitment.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image2/4.webp"
+                    },
+                    {
+                        desc: "Our CEO and MD gifted an e-bike to a deserving individual with care and commitment.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image2/5.webp"
+                    },
+                    {
+                        desc: "Our CEO was awarded the prestigious 'Doctor of Letters' by The Universal Tamil University.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image2/6.webp"
+                    }
+                ];
+
+                const container2 = document.getElementById("eventSlides2");
+
+                container2.innerHTML = events2.map(item => `
+    <div class="swiper-slide">
+        <div class="card-img">
+            <img src="${item.img}" alt="${item.desc}" loading="lazy">
+            <div class="overlay">
+                <p class="hd-22 w-100">${item.desc}</p>
+            </div>
+        </div>
+    </div>
+`).join('');
+            </script>
+
+            <script>
+                const events3 = [
+                    {
+                        desc: "Our CEO and MD gifted an e-bike to a deserving individual with care and commitment.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image5/1.webp"
+                    },
+                    {
+                        desc: "Our CEO launched a new product at Joy Alukkas, marking a milestone for our company.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image5/2.webp"
+                    },
+                    {
+                        desc: "Our CEO and MD met with DCP Ms. G Vanitha to advance meaningful social welfare projects for the community.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image5/3.webp"
+                    },
+                    {
+                        desc: "Our CEO and MD had a productive meeting with the Minister of IT Mr. Palanivel Thiaga Rajan.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image3/4.webp"
+                    },
+                ];
+
+                const container3 = document.getElementById("eventSlides3");
+
+                container3.innerHTML = events3.map(item => `
+    <div class="swiper-slide">
+        <div class="card-img">
+            <img src="${item.img}" alt="${item.desc}" loading="lazy">
+            <div class="overlay">
+                <p class="hd-22 w-100">${item.desc}</p>
+            </div>
+        </div>
+    </div>
+`).join('');
+            </script>
+
+            <script>
+                const events4 = [
+                    {
+                        desc: "Our team celebrated Independence Day with pride to honor the nation’s heritage.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image4/1.webp"
+                    },
+                    {
+                        desc: "Our team enjoyed a spirited cricket match with camaraderie and more fun.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image4/2.webp"
+                    },
+                    {
+                        desc: "Our office marked Ayudha Pooja with devotion and enthusiasm alongside our CEO and MD.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image4/3.webp"
+                    },
+                    {
+                        desc: "We celebrated our 3rd anniversary with rewards, led by our CEO and MD.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image4/4.webp"
+                    },
+                    {
+                        desc: "Our CEO and MD proudly presented the best employee with a bike on our third anniversary.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image4/5.webp"
+                    },
+                    {
+                        desc: "Our team celebrated Pongal with enthusiasm and tradition, bringing everyone together in joy.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image4/6.webp"
+                    },
+                ];
+
+                const container4 = document.getElementById("eventSlides4");
+
+                container4.innerHTML = events4.map(item => `
+    <div class="swiper-slide">
+        <div class="card-img">
+            <img src="${item.img}" alt="${item.desc}" loading="lazy">
+            <div class="overlay">
+                <p class="hd-22">${item.desc}</p>
+            </div>
+        </div>
+    </div>
+`).join('');
+            </script>
+            <script>
+                const events5 = [
+                    {
+                        desc: "Our MD Mr. Vishnu Prasad had the honor of meeting Prime Minister Shri Narendra Modi.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image3/1.webp",
+                        class: "first-slide"
+                    },
+                    {
+                        desc: "Ex-IPS Mr. Annamalai lighting the lamp along with our CEO and MD during our office inauguration.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image3/3.webp"
+                    },
+                    {
+                        desc: "Our CEO and MD warmly greeted Ex-IPS Mr. Annamalai during our office inauguration.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image3/2.webp",
+                        class: "third-slide"
+                    },
+                    {
+                        desc: "Ex-IPS Mr. Annamalai warmly greeting our Managing Director Mr. Vishnu Prasad.",
+                        img: "https://assets.clarisco.com/clarisco-images/event/Image2/3.webp"
+                    },
+                ];
+
+                const container5 = document.getElementById("eventSlides5");
+
+                container5.innerHTML = events5.map(item => `
+        <div class="swiper-slide">
+            <div class="card-img">
+                <img src="${item.img}" class="${item.class || ''}" alt="${item.desc}" loading="lazy">
+                <div class="overlay">
+                    <p class="hd-22 w-100">${item.desc}</p>
+                </div>
+            </div>
+        </div>
+    `).join('');
+            </script>
+
+
+            <%- include('../common-new/footer') %>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var swiper = new Swiper(".leftSwipertopleft", {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                            centeredSlides: true,
+                            loop: true,
+                            grabCursor: true,
+                            autoplay: {
+                                delay: 4000,
+                                disableOnInteraction: false,
+                            },
+                        });
+
+                        swiper.on('click', function () {
+                            swiper.autoplay.stop();
+
+                            setTimeout(function () {
+                                swiper.autoplay.start();
+                            }, 4000);
+                        });
+                    });
+                </script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var swiper = new Swiper(".leftSwipertopright", {
+                            direction: "vertical",
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                            loop: true,
+                            grabCursor: true,
+                            autoplay: {
+                                delay: 5000,
+                                disableOnInteraction: false,
+                            },
+                        });
+                        swiper.on('click', function () {
+                            swiper.autoplay.stop();
+
+                            setTimeout(function () {
+                                swiper.autoplay.start();
+                            }, 4000);
+                        });
+                    });
+                </script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var swiper = new Swiper(".leftSwiperBottomleft", {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                            loop: true,
+                            grabCursor: true,
+                            autoplay: {
+                                delay: 5000,
+                                disableOnInteraction: false,
+                            },
+                        });
+                        swiper.on('click', function () {
+                            swiper.autoplay.stop();
+
+                            setTimeout(function () {
+                                swiper.autoplay.start();
+                            }, 4000);
+                        });
+                    });
+                </script>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var swiper = new Swiper(".leftSwiperBottomright", {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                            loop: true,
+                            direction: "vertical",
+                            grabCursor: true,
+                            autoplay: {
+                                delay: 4000,
+                                disableOnInteraction: false,
+                            },
+                        });
+                        swiper.on('click', function () {
+                            swiper.autoplay.stop();
+
+                            setTimeout(function () {
+                                swiper.autoplay.start();
+                            }, 4000);
+                        });
+                    });
+                </script>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var swiper = new Swiper(".rightSwiperTop", {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                            loop: true,
+                            grabCursor: true,
+                            autoplay: {
+                                delay: 6000,
+                                disableOnInteraction: false,
+                            },
+                        });
+                        swiper.on('click', function () {
+                            swiper.autoplay.stop();
+
+                            setTimeout(function () {
+                                swiper.autoplay.start();
+                            }, 4000);
+                        });
+                    });
+                </script>
+
+                <script>
+                    $(document).ready(function () {
+                        $(window).scroll(function () {
+                            var wscroll = $(this).scrollTop();
+                            if (wscroll > 50) {
+                                $(".top-newbar-section .navbar").css("background-color", "rgb(249 251 255)");
+                            }
+                            else {
+                                $(".top-newbar-section .navbar").css("background-color", "transparent");
+                            }
+                        });
+                    });
+                </script>
+    </body>
+
+
+    </html>

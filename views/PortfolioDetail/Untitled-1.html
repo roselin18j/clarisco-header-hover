@@ -1,0 +1,52 @@
+
+<div class="card-body">
+    <div class="card card-primary">
+        <form method="post" name="about2titleupdate" id="about2titleupdate">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">About Title2</label>
+                    <input type="text" class="form-control" name="abouttitle2" id="abouttitle2"
+                        placeholder="Enter Title" value="<%- data.aboutpage.aboutpage[0].abouttitle2%>">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Description2</label>
+                    <textarea type="text" class="form-control" id="abouttitle2desc"
+                        name="abouttitle2desc"><%- data.aboutpage.aboutpage[0].abouttitle2desc%></textarea>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+   
+    var base_url = window.location.origin;
+    $(document).ready(function () {
+        $('#about2titleupdate').submit(function (event) {
+            event.preventDefault();
+          
+            let abouttitle2desc = $('#footercontact_portfolio').val();
+            $.ajax({
+                url: base_url + '/portfolio_contact_submit',
+                data: JSON.stringify({"abouttitle2desc": abouttitle2desc }),
+                type: 'POST',
+                contentType: 'application/json',
+                success: function (result) {
+                    if (result.status == true) {
+                        Swal.fire({
+                            title: "<i>Status</i>",
+                            html: "<b>" + result.message + "</b>",
+                            confirmButtonText: "<u>ok</u>",
+                        });
+                        setTimeout(function () {
+                            window.location.href = "/thankyou";
+                        }, 2000)
+                    }
+                }
+            });
+        });
+    })
+</script>

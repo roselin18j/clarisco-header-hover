@@ -1,0 +1,240 @@
+<form class="new-contact-form row" name="footercontact" id="footercontact" autocomplete="off">
+
+  <div class="col-lg-6">
+    <div class="input-group new-contact-form-section align-items-center">
+      <span class="input-group-text"> <span><i class="fa-solid fa-user"></i></span></span>
+      <input type="text" class="form-control form-control-new-contact" placeholder="Enter Your Name"
+        aria-label="footercontact" name="name" autocomplete="off">
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="input-group new-contact-form-section align-items-center">
+      <span class="input-group-text"> <span><i class="fa-solid fa-envelope"></i></span></span>
+      <input type="email" name="email" class="form-control form-control-new-contact" placeholder="Enter Your Email"
+        aria-label="Name" autocomplete="off">
+    </div>
+  </div>
+
+  <div class="col-lg-6 country-sel">
+    <div class="input-group new-contact-form-section d-flex flex-row new-contact-form-section-country">
+      <span class="input-group-text"> <span><i class="fa-solid fa-globe"></i></span></span>
+      <input type="text" id="country_selector" name="country_selector" autocomplete="off"
+        class="form-control-new-contact-2 me-auto" placeholder="Enter Your Country" value="">
+    </div>
+  </div>
+
+  <div class="col-lg-6 country-sel-2">
+    <div class="input-group new-contact-form-section d-flex flex-row new-contact-form-section-country">
+      <span class="input-group-text"> <span><i class="fa-solid fa-phone"></i></span></span>
+      <input class="form-control-new-contact-2 pt-2 w-100" type="tel" id="mob_phone" aria-label="Name"
+        autocomplete="off" name="mob_phone" placeholder="Enter Mobile Number">
+      <input type="hidden" name="phone" id="phone" />
+    </div>
+  </div>
+
+  <!-- <div class="col-lg-12">
+    <div class="input-group new-contact-form-section new-contact-form-section-placeholder">
+
+      <div class="select-icon-wrapper position-relative">
+        <span class="input-group-text d-block">
+          <span><i class="bi bi-whatsapp" id="selectedIcon"></i></span>
+        </span>
+
+        <select class="form-select menu" name="socialMediaRequirement" id="socialMediaRequirement"
+          aria-label="Default select example">
+          <option value="Whatsapp" data-icon="bi-whatsapp">Whatsapp</option>
+          <option value="Telegram" data-icon="bi-telegram">Telegram</option>
+          <option value="Teams" data-icon="bi-microsoft-teams">Teams</option>
+          <option value="Others" data-icon="bi-card-list">Others</option>
+        </select>
+      </div>
+
+      <input type="text" name="socialMedia" id="meta_itemcondition" class="form-control form-control-new-contact ps-4"
+        autocomplete="off" placeholder="Enter Whatsapp Number" aria-label="Name">
+    </div>
+  </div> -->
+
+  <!-- <div class="col-lg-12">
+    <div class="new-contact-form-section py-2 px-3 border-0 position-relative">
+      <p class="fw-bold mb-3 form-control-new-contact">Select Your Services</p>
+
+      <div class="row gy-3 gx-4 service-check">
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="custom_software_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Custom Software Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="ai_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            AI Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="web_mobile_app_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Web/Mobile App Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="cryptocurrency_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Cryptocurrency Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="crypto_exchange_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Crypto Exchange Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="bot_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Bot Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="neo_banking_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Neo Banking Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="smart_contract_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Smart Contract Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="web3_dapp_defi_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Web3 DApp or DeFi Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="wallet_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Wallet Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="token_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Token Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="business_consulting"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Business Consulting
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="startup_enterprise_product_development"
+              class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Startup/Enterprise Product Development
+          </label>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <label class="service-option">
+            <input type="checkbox" name="requirement" value="others" class="form-control form-control-new-contact" />
+            <span class="checkmark"></span>
+            Others
+          </label>
+        </div>
+
+      </div>
+
+    </div>
+  </div> -->
+
+  <div class="col-lg-12">
+    <div class="input-group new-contact-form-section">
+      <span class="input-group-text"> <span><i class="fa-solid fa-list"></i></span></span>
+      <select class="form-select" name="requirement" id="requirement" aria-label="Default select example">
+        <option value="" selected hidden>Select your services</option>
+        <option value="ai_ml_development">AI & ML Development Services</option>
+        <option value="crypto_exchange_development">Crypto Exchange Development Services</option>
+        <option value="blockchain_development">Blockchain Development Services</option>
+        <option value="rwa_tokenization_development">RWA Tokenization Platform Development</option>
+        <option value="prediction_market_platform_development">Prediction Market Platform Development</option>
+        <option value="ico_ieo_sto_development">ICO / IEO / STO Development Services</option>
+        <option value="crypto_wallet_development">Crypto Wallet Development Services</option>
+        <option value="trading-bot-development">Trading Bot Development</option>
+        <option value="game_development">Game Development Services</option>
+        <option value="defi_development">DeFi Development Services</option>
+        <option value="banking_software_development">Banking Software Development</option>
+        <option value="web_mobile_app_development">Custom Web & Mobile App Development</option>
+        <option value="ar_vr_vfx_services">AR / VR / VFX Services</option>
+        <option value="business_consulting">Business Consulting Services</option>
+        <option value="hire-dedicated-developers">Hire Dedicated Developers / Resources</option>
+        <option value="others">Other (Please Specify)</option>
+      </select>
+      <small id="requirement-error" class="text-danger"></small>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <div class="input-group new-contact-form-section align-items-start">
+      <span class="input-group-text pt-0"> <span><i class="fa-solid fa-square-pen"></i></span></span>
+      <textarea id="message" name="message" class="form-control form-control-new-contact" autocomplete="off"
+        placeholder="Write Your Requirements.." style="height: 100px;width: auto;"></textarea>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <div id="recaptcha-container"></div>
+    <div class="loader-button position-relative d-flex">
+      <button class="contact-new-form-button" id="contact_submit_btn">
+        submit<i class="fa-solid fa-angle-right"></i>
+      </button>
+      <div class="spinner-border position-relative spinning-rotator" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+</form>

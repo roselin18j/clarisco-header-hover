@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff");
+    font-display: swap;
+}
+/* Font Awesome 6.4.2 from cdnjs.cloudflare.com - Solid */
+@font-face {
+font-family: "Font Awesome 6 Free";
+font-weight: 900;
+font-display: swap;
+src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-solid-900.woff2") format("woff2"),
+url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-solid-900.ttf") format("truetype");
+}
+ 
+/* Font Awesome 6.4.2 from cdnjs.cloudflare.com - Brands */
+@font-face {
+font-family: "Font Awesome 6 Brands";
+font-weight: 400;
+font-display: swap;
+src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-brands-400.woff2") format("woff2"),
+url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-brands-400.ttf") format("truetype");
+}
+ 
+/* Font Awesome 6.4.2 from cdnjs.cloudflare.com - Regular */
+@font-face {
+font-family: "Font Awesome 6 Free";
+font-weight: 400;
+font-display: swap;
+src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-regular-400.woff2") format("woff2"),
+url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-regular-400.ttf") format("truetype");
+}

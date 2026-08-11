@@ -1,0 +1,315 @@
+.slider-images-1 {
+    position: absolute;
+    top: 250px;
+    left: 125px;
+    width: 680px;
+    height: 410px
+}
+
+.mac-floating-sliders-top {
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    width: 900px;
+    height: 550px;
+    z-index: 999
+}
+
+.portfolio-slider-1 {
+    background-color: #2366e5
+}
+
+.portfolio-slider-2 {
+    background-color: #874c29
+}
+
+.portfolio-slider-3 {
+    background-color: #c1a1ed
+}
+
+.portfolio-slider-4 {
+    background-color: #ee81b3
+}
+
+.portfolio-slider-5 {
+    background-color: #937dc2
+}
+
+.portfolio-slider-6 {
+    background-color: #f0a67b
+}
+
+.portfolio-slider-7 {
+    background-color: #54bab9
+}
+
+.portfolio-slider-8 {
+    background-color: #ecb390
+}
+
+.portfolio-slider-9 {
+    background-color: #772e56
+}
+
+.portfolio-slider-10 {
+    background-color: #ff7396
+}
+
+.portfolio-slider-11 {
+    background-color: #92b4ec
+}
+
+.portfolio-explore-button-white {
+    background-color: transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    padding: 0 40px !important
+}
+
+
+@keyframes swiperCatchAnimation2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.swiper-slide .swiper-catch-2,
+.swiper-slide .swiper-catch-3 {
+    opacity: 0
+}
+
+.swiper-slide-active .swiper-catch-2 {
+    animation-name: swiperCatchAnimation2;
+    animation-duration: .8s;
+    animation-delay: .9s;
+    animation-fill-mode: both
+}
+
+@keyframes swiperCatchAnimation3 {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.swiper-slide-active .swiper-catch-3 {
+    animation-name: swiperCatchAnimation3;
+    animation-duration: .8s;
+    animation-delay: .9s;
+    animation-fill-mode: both
+}
+
+@media all and (min-width:992px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        padding: 14px;
+        left: 3%;
+        transform: rotate(90deg)
+    }
+
+    .portfolio-slide-left-categories-1-black {
+        font-size: 70px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #000
+    }
+
+    .portfolio-slide-left-categories-2-white {
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        color: #fff
+    }
+
+    :root {
+        --swiper-theme-color: #FFF !important;
+        --swiper-navigation-size: 14px !important
+    }
+
+    .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #000 !important;
+        opacity: .7 !important
+    }
+
+    .swiper-pagination-vertical.swiper-pagination-bullets,
+    .swiper-vertical>.swiper-pagination-bullets {
+        right: 30px !important;
+        top: 50%;
+        transform: translate3d(0, -50%, 0)
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1 !important;
+        background: #fff !important
+    }
+
+    .swiper-button-prev {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        top: 84%
+    }
+
+    .swiper-button-next {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        top: 90%
+    }
+}
+
+@media(max-width:991px) {
+
+    .portfolio-slide-right-1 {
+        padding-top: 50vh
+    }
+
+    .portfolio-slide-left-categories-1-white {
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #fff
+    }
+
+    .portfolio-slide-left-categories-2-white {
+        font-size: 15px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        color: #fff
+    }
+
+    .swiper-button-prev {
+        border: 1px solid #fff;
+        padding: 10px;
+        border-radius: 50%;
+        top: 90%;
+        left: 3%
+    }
+
+    .swiper-button-next {
+        border: 1px solid #fff;
+        padding: 10px;
+        border-radius: 50%;
+        top: 90%;
+        left: 11%
+    }
+
+    .mac-floating-sliders-top,
+    .slider-images-1 {
+        position: absolute;
+        top: 14%;
+        left: 1%;
+        width: 350px;
+        height: 250px
+    }
+
+    .slider-images-1 {
+        padding: 28px 45px
+    }
+
+    .mac-floating-sliders-top {
+        z-index: 999
+    }
+
+    :root {
+        --swiper-theme-color: #FFF !important;
+        --swiper-navigation-size: 12px !important
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #000 !important;
+        opacity: .7 !important
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1 !important;
+        background: #fff !important
+    }
+}
+
+@media (min-width:1025px) and (max-width:1800px) {
+
+    .mac-floating-sliders-top,
+    .slider-images-1 {
+        position: absolute;
+        top: 20%;
+        left: 2%;
+        width: 600px;
+        height: 400px
+    }
+
+    .slider-images-1 {
+        padding: 50px 75px
+    }
+
+    .mac-floating-sliders-top {
+        z-index: 999
+    }
+
+    .portfolio-slide-left-categories-1-white {
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #fff
+    }
+
+    .portfolio-slide-left-categories-2-white {
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        color: #fff
+    }
+}
+
+.portfolio-effects-cards .swiper {
+    width: 60%;
+    height: 100%
+}
+
+.portfolio-effects-cards .swiper img {
+    width: 100%;
+    height: 100%
+}
+
+.portfolio-effects-cards .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff
+}
+
+.my-div {
+    display: none
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-top: 5px;
+    color: #fff !important;
+    font-size: .7rem;
+    font-weight: 700
+}

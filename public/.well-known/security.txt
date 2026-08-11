@@ -1,0 +1,8 @@
+Contact: https://www.clarisco.com/contact
+Contact: mailto:security@clarisco.com
+Expires: 2027-05-11T23:59:59.999Z
+Preferred-Languages: en
+Canonical: https://www.clarisco.com/.well-known/security.txt
+Policy: https://www.clarisco.com/privacy-policy
+Hiring: https://www.clarisco.com/career
+Encryption: https://www.clarisco.com/pgp-key.txt

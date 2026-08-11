@@ -1,0 +1,23 @@
+<%- include('../common-new/header') %>
+
+  <body class="nw-banner-wt-1">
+    <%- include('../common-new/navbar') %>
+
+      <%- include('../common-new/footer') %>
+
+        <script>
+          $(document).ready(function () {
+            $(window).scroll(function () {
+              var wscroll = $(this).scrollTop();
+              if (wscroll > 50) {
+                $(".top-newbar-section .navbar").css("background-color", "rgb(249 251 255)");
+              }
+              else {
+                $(".top-newbar-section .navbar").css("background-color", "transparent");
+              }
+            });
+          });
+        </script>
+  </body>
+
+  </html>

@@ -1,0 +1,485 @@
+<%- include('../common-new/header') %>
+
+  <body class="nw-banner-wt-1">
+
+    <%- include('../common-new/navbar') %>
+
+
+      <section class='new-header-padding-sec'>
+        <div class="container-fluid col-lg-12 px-lg-5">
+          <input type="hidden" id="numToShow" value="9" />
+          <input type="hidden" id="numToAdd" value="2" />
+          <div class="row justify-content-evenly g-4">
+            <div class='col-lg-10'>
+
+              <div class='row row-cols-1 row-cols-md-2 row-cols-lg-3 blog-card-style mb-4 g-4' id="blogssections">
+
+                <% var ik=0; blogdata.forEach(function(fetitem){ ik++; %>
+                  <div class="loader-blog">
+                    <div class="col h-100">
+                      <a href="https://www.clarisco.com/<%- fetitem.blog_link %>" target="_blank">
+                        <div class="card blog-card-style-2 h-100">
+                          <div class='top-blog-image-variable'>
+                            <img src="<%- fetitem.blogimg ? fetitem.blogimg : '/assets/blogs.jpg' %>"
+                              class="card-img-top" alt="blogs" />
+                          </div>
+                          <div class="card-body pb-auto px-0">
+                            <div class='d-flex flex-row justify-content-between'>
+                              <div>
+                                <p class="post-item__meta post-item__meta--category">
+                                  <%- fetitem.blog_category %>
+                                </p>
+                              </div>
+                              <div>
+                                <time class="post-item__meta post-item__meta--date">
+                                  <%- fetitem.date %>
+                                </time>
+                              </div>
+                            </div>
+
+
+                            <div class='row '>
+                              <div class='col'>
+                                <h3 class="card-title blog-page-title mt-2">
+                                  <%- fetitem.blog_title %>
+                                </h3>
+                              </div>
+                            </div>
+
+
+
+
+                            <div class='row blog-para-list-limit getting'>
+                              <div class='col'>
+                                <p class="card-text blog-para-list">
+                                  <%- fetitem.blog_meta_description %>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="blog-btm-row">
+                              <span class="read-more-cta" aria-hidden="true">
+                                Read More <i class="bi bi-arrow-right"></i>
+                              </span>
+                              <div class="ryt">
+                                <p>Author</p>
+                                <span>Priyadharshini Suriyanarayanan</span>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <% }) %>
+              </div>
+
+
+              <div class="pagination-blog-nw " id="pagination">
+
+                <button class="nav-btn" id="prevBtn">
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <span id="pageNumbers" class="d-flex flex-row gap-2"></span>
+
+                <button class="nav-btn" id="nextBtn">
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+
+              </div>
+
+            </div>
+
+
+
+            <div class='col-lg-2 sidebar'>
+              <div class='row mt-4'>
+                <div class='card blog-page-side-card'>
+                  <div class="card-body">
+                    <h4 class="widget-title mb-3 categories-lining-content mt-2">CATEGORIES</h4>
+                    <div class='blog-categories-list bullet-points-modifyed'>
+                      <ul>
+                        <% var ik=0; blogcategory.forEach(function(fetitem){ ik++; %>
+                          <li class="bullet-star-modifyed bullet-points-modifyed"><i class="fa-solid fa-diamond"></i><a
+                              href="/blog/category/<%- fetitem.blog_category_link %>" target="_blank">
+                              <%- fetitem.blog_category %>
+                            </a></li>
+                          <% }) %>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <===========blogs altering end==============> -->
+              <!-- <=================categories====================> -->
+              <div class='row mt-5 mb-4'>
+                <div class='card blog-page-side-card'>
+
+                  <div class='blog-categories-list '>
+                    <div class="card-body">
+                      <h4 class="widget-title widget-title-content-motion mb-3 py-3"
+                        style="background:transparent;border-radius:5px;">TRENDING POSTS</h4>
+                      <% var title=0; blogdata.slice(0,5).forEach(function(fetitem){ title++; %>
+                        <div class='blog-categories-list '>
+                          <ul class="dot-blocking">
+                            <a href="https://www.clarisco.com/<%= fetitem.blog_link %>" target="_blank">
+                              <li value="<%= fetitem.blog_title %>">
+                                <%= fetitem.blog_title %>
+                              </li>
+                            </a>
+                          </ul>
+                        </div>
+
+
+                        <% }) %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <%- include('../common-new/footer') %>
+
+
+
+        <!-- <script>
+            // Generate random numbers for the CAPTCHA
+          function generateCaptcha() {
+          var num1 = Math.floor(Math.random() * 10);
+          var num2 = Math.floor(Math.random() * 10);
+          
+          document.getElementById('num1').textContent = num1;
+          document.getElementById('num2').textContent = num2;
+          }
+          
+          // Validate the CAPTCHA when the form is submitted
+          function validateCaptcha(event) {
+          event.preventDefault();
+          
+          var captchaInput = document.getElementById('captcha');
+          var userAnswer = parseInt(captchaInput.value);
+          var num1 = parseInt(document.getElementById('num1').textContent);
+          var num2 = parseInt(document.getElementById('num2').textContent);
+          
+          // Calculate the expected sum
+          var expectedSum = num1 + num2;
+          
+          // Check if the user's answer is correct
+          if (userAnswer === expectedSum) {
+            // alert('CAPTCHA is correct!');
+            // You can add additional form submission logic here
+          } else {
+            // alert('CAPTCHA is incorrect. Please try again.');
+            // Reset the CAPTCHA
+            captchaInput.value = '';
+            generateCaptcha();
+          }
+          }
+          
+          // Generate the initial CAPTCHA when the page loads
+          generateCaptcha();
+          
+          // Attach the form submission event listener
+          var form = document.querySelector('form');
+          form.addEventListener('submit', validateCaptcha);
+          </script> -->
+
+
+
+
+        <script>
+
+          let limit = 9;
+          let currentPage = 1;
+          let totalPages = 1;
+
+          const container = document.getElementById("blogssections");
+
+
+          /* PAGE CACHE */
+          const pageCache = {};
+
+          async function loadBlogs(page = 1) {
+
+            /* If page cached -> instant render */
+            if (pageCache[page]) {
+
+              renderBlogs(pageCache[page].blogs);
+              totalPages = pageCache[page].totalPages;
+              currentPage = page;
+
+              renderPagination();
+              updateNavButtons();
+              prefetchPage(page + 1);
+
+              return;
+            }
+
+            let offset = (page - 1) * limit;
+
+            let res = await fetch(`/blog-pagination?limit=${limit}&offset=${offset}`);
+            let data = await res.json();
+
+            totalPages = Math.ceil(data.count / limit);
+
+            /* Hide pagination if only 1 page */
+
+            if (totalPages >= 2) {
+              document.getElementById("pagination").style.display = "flex";
+            }
+
+            /* Save cache */
+
+            pageCache[page] = {
+              blogs: data.blogsdata,
+              totalPages: totalPages
+            };
+
+            renderBlogs(data.blogsdata);
+
+            currentPage = page;
+
+            renderPagination();
+            updateNavButtons();
+
+            /* Prefetch next page */
+
+            prefetchPage(page + 1);
+
+          }
+
+          function renderBlogs(blogs) {
+
+            let html = "";
+
+            blogs.forEach(item => {
+
+              html += `
+<div class="loader-blog">
+<div class="col h-100">
+
+<a href="https://www.clarisco.com/${item.blog_link}" target="_blank">
+
+<div class="card blog-card-style-2 h-100">
+
+<div class="top-blog-image-variable">
+<img loading="lazy" src="${item.blogimg ? item.blogimg : '/assets/blogs.jpg'}" class="card-img-top" onerror="this.onerror=null;this.src='/assets/blogs.jpg';" alt="blogs"/>
+</div>
+
+<div class="card-body pb-auto px-0">
+
+<div class="d-flex flex-row justify-content-between">
+
+<div>
+<p class="post-item__meta post-item__meta--category">
+${item.blog_category}
+</p>
+</div>
+
+<div>
+<time class="post-item__meta post-item__meta--date">
+${item.date}
+</time>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col">
+<h3 class="card-title blog-page-title mt-2">
+${item.blog_title}
+</h3>
+</div>
+</div>
+
+<div class="row blog-para-list-limit getting">
+<div class="col">
+<p class="card-text blog-para-list">
+${item.blog_meta_description}
+</p>
+</div>
+</div>
+<div class="blog-btm-row">
+                                                         <span class="read-more-cta" aria-hidden="true">
+                                                            Read More <i class="bi bi-arrow-right"></i>
+                                                        </span>
+                                                        <div class="ryt">
+<p>Author</p>
+<span>Priyadharshini Suriyanarayanan</span>
+</div>
+                                                       </div>
+
+</div>
+</div>
+
+</a>
+
+</div>
+</div>
+`;
+
+            });
+
+            container.innerHTML = html;
+
+          }
+
+          /* PREFETCH NEXT PAGE */
+
+          async function prefetchPage(page) {
+
+            if (page > totalPages) return;
+            if (pageCache[page]) return;
+
+            let offset = (page - 1) * limit;
+
+            fetch(`/blog-pagination?limit=${limit}&offset=${offset}`)
+              .then(res => res.json())
+              .then(data => {
+
+                pageCache[page] = {
+                  blogs: data.blogsdata,
+                  totalPages: Math.ceil(data.count / limit)
+                };
+
+              });
+
+          }
+
+          /* PAGINATION UI */
+
+          function renderPagination() {
+
+            let html = "";
+
+            let start = Math.max(1, currentPage - 2);
+            let end = Math.min(totalPages, currentPage + 2);
+
+            /* FIRST PAGE */
+
+            if (start > 1) {
+
+              html += `<a href="javascript:void(0)" onclick="loadBlogs(1)">1</a>`;
+
+              if (start > 2) {
+                html += `<span class="dots">...</span>`;
+              }
+
+            }
+
+            /* PAGE LOOP */
+
+            for (let i = start; i <= end; i++) {
+
+              html += `<a href="javascript:void(0)" class="${i === currentPage ? 'active' : ''}" onclick="loadBlogs(${i})">${i}</a>`;
+
+            }
+
+            /* LAST PAGE */
+
+            if (end < totalPages) {
+
+              if (end < totalPages - 1) {
+                html += `<span class="dots">...</span>`;
+              }
+
+              html += `<a href="javascript:void(0)" onclick="loadBlogs(${totalPages})">${totalPages}</a>`;
+
+            }
+
+            document.getElementById("pageNumbers").innerHTML = html;
+
+          }
+
+          /* ENABLE / DISABLE BUTTONS */
+
+          function updateNavButtons() {
+
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+
+            /* PREV */
+
+            if (currentPage === 1) {
+
+              prevBtn.disabled = true;
+              prevBtn.style.opacity = "0.5";
+              prevBtn.style.cursor = "not-allowed";
+
+            } else {
+
+              prevBtn.disabled = false;
+              prevBtn.style.opacity = "1";
+              prevBtn.style.cursor = "pointer";
+
+            }
+
+            /* NEXT */
+
+            if (currentPage === totalPages) {
+
+              nextBtn.disabled = true;
+              nextBtn.style.opacity = "0.5";
+              nextBtn.style.cursor = "not-allowed";
+
+            } else {
+
+              nextBtn.disabled = false;
+              nextBtn.style.opacity = "1";
+              nextBtn.style.cursor = "pointer";
+
+            }
+
+          }
+
+          /* NAVIGATION */
+
+          document.getElementById("nextBtn").onclick = () => {
+
+            if (currentPage < totalPages) {
+              loadBlogs(currentPage + 1);
+            }
+
+          }
+
+          document.getElementById("prevBtn").onclick = () => {
+
+            if (currentPage > 1) {
+              loadBlogs(currentPage - 1);
+            }
+
+          }
+
+          /* INITIAL LOAD */
+
+          loadBlogs();
+
+        </script>
+
+
+
+
+        <script>
+          $(document).ready(function () {
+            $(window).scroll(function () {
+              var wscroll = $(this).scrollTop();
+              if (wscroll > 50) {
+                $(".top-newbar-section .navbar").css("background-color", "rgb(249 251 255)");
+              }
+              else {
+                $(".top-newbar-section .navbar").css("background-color", "transparent");
+              }
+            });
+          });
+        </script>
+
+  </body>
+
+  </html>

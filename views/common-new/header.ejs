@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Tag Manager loads after interaction/idle so it cannot compete with the critical rendering path. -->
+  <script>
+    (function () {
+      var loaded = false;
+      function loadTagManager() {
+        if (loaded) return;
+        loaded = true;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PSS37HK';
+        document.head.appendChild(script);
+      }
+      ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (eventName) {
+        window.addEventListener(eventName, loadTagManager, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadTagManager, 4000); }, { once: true });
+    }());
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <% const pageLink=metadata && metadata.page_link; const heroImageMap={
+    'asset-tokenization-development-company' : 'https://assets.clarisco.com/tokenization-imgs/tokbanner.webp'
+    , 'rwa-tokenization-platform-development' : 'https://assets.clarisco.com/tokenization-imgs/tokbanner.webp'
+    , 'carbon-credits-tokenization-development' : 'https://assets.clarisco.com/tokenization-imgs/tokbanner.webp'
+    , 'gold-tokenization-development-company' : 'https://assets.clarisco.com/tokenization-imgs/tokbanner.webp'
+    , 'real-estate-tokenization-development-company' : 'https://assets.clarisco.com/tokenization-imgs/tokbanner.webp'
+    , 'cryptocurrency-exchange-development' : 'https://assets.clarisco.com/cryptocurrency-img/landing-banner.webp'
+    , 'white-label-crypto-exchange' : 'https://assets.clarisco.com/cryptocurrency-img/landing-banner.webp'
+    , 'crypto-trading-bot-development' : 'https://assets.clarisco.com/bot-img/botbanner-img.webp'
+    , 'crypto-arbitrage-bot-development-company' : 'https://assets.clarisco.com/bot-img/botbanner-img.webp'
+    , 'flash-loan-arbitrage-bot-development' : 'https://assets.clarisco.com/bot-img/botbanner-img.webp'
+    , 'ai-development-company' : 'https://assets.clarisco.com/ai-image/aimnban.webp'
+    , 'polymarket-clone-script' : 'https://assets.clarisco.com/clarisco-images/ai-pages/PolymarketClone/Banner1.webp'
+    , 'kalshi-clone-script' : 'https://assets.clarisco.com/assets/kalshi-clone/Banner1.webp'
+    };
+    // Self-hosted, resized (800w) variants of the same hero images, served under
+    // 768px viewports so mobile doesn't download the full desktop-resolution asset
+    // (some of these originals were as large as 7680x4320 — see Core Web Vitals fix log).
+    const heroImageMobileMap={
+    'asset-tokenization-development-company' : '/assets/img/hero-mobile/tokbanner-mobile.webp'
+    , 'rwa-tokenization-platform-development' : '/assets/img/hero-mobile/tokbanner-mobile.webp'
+    , 'carbon-credits-tokenization-development' : '/assets/img/hero-mobile/tokbanner-mobile.webp'
+    , 'gold-tokenization-development-company' : '/assets/img/hero-mobile/tokbanner-mobile.webp'
+    , 'real-estate-tokenization-development-company' : '/assets/img/hero-mobile/tokbanner-mobile.webp'
+    , 'cryptocurrency-exchange-development' : '/assets/img/hero-mobile/landing-banner-mobile.webp'
+    , 'white-label-crypto-exchange' : '/assets/img/hero-mobile/landing-banner-mobile.webp'
+    , 'crypto-trading-bot-development' : '/assets/img/hero-mobile/botbanner-img-mobile.webp'
+    , 'crypto-arbitrage-bot-development-company' : '/assets/img/hero-mobile/botbanner-img-mobile.webp'
+    , 'flash-loan-arbitrage-bot-development' : '/assets/img/hero-mobile/botbanner-img-mobile.webp'
+    , 'ai-development-company' : '/assets/img/hero-mobile/aimnban-mobile.webp'
+    , 'polymarket-clone-script' : '/assets/img/hero-mobile/polymarket-banner1-mobile.webp'
+    , 'kalshi-clone-script' : '/assets/img/hero-mobile/kalshi-banner1-mobile.webp'
+    };
+    const heroImage=heroImageMap[pageLink];
+    const heroImageMobile=heroImageMobileMap[pageLink]; %>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://assets.clarisco.com/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://assets.clarisco.com/images/favicon.ico">
+
+    <link rel="preconnect" href="https://assets.clarisco.com" crossorigin>
+
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//connect.facebook.net">
+
+
+
+
+    <% if (heroImage && heroImageMobile) { %>
+      <link rel="preload" as="image" href="<%- heroImageMobile %>" fetchpriority="high" media="(max-width: 768px)">
+      <link rel="preload" as="image" href="<%- heroImage %>" fetchpriority="high" media="(min-width: 769px)">
+      <style>
+        @media (max-width: 768px) {
+          .nwe-toke-sec-1 { background-image: url('<%- heroImageMobile %>') !important; }
+        }
+      </style>
+      <% } else if (heroImage) { %>
+        <link rel="preload" as="image" href="<%- heroImage %>" fetchpriority="high">
+        <% } %>
+
+        <link rel="preload" href="/assets/js/jquery-3.6.0.min.js" as="script">
+
+        <link rel="stylesheet" href="/assets/css/bootstrap-5.1.3.min.css">
+
+        <% if (typeof needsSwiper === 'undefined' || needsSwiper) { %>
+        <link rel="preload" href="/assets/css/swiper-bundle.min.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        </noscript>
+        <% } %>
+
+        <link rel="preload" href="/assets/css/font-awesome.all.min.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet" href="/assets/css/font-awesome.all.min.css">
+        </noscript>
+
+        <link rel="preload" href="/assets/css/bootstrap-icons.min.css"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet"
+            href="/assets/css/bootstrap-icons.min.css">
+        </noscript>
+
+        <link rel="preload" href="/assets/css/aos-2.3.1.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet" href="/assets/css/aos-2.3.1.css">
+        </noscript>
+
+        <link rel="preload" href="/assets/fonts/poppins.medium.ttf" as="font" type="font/ttf" crossorigin>
+
+        <link rel="stylesheet" href="/assets/css/style.css">
+
+        <link rel="stylesheet" href="/assets/css/override.css">
+
+        <link rel="stylesheet" href="/assets/css/newnavbar.css">
+
+        <link rel="stylesheet" href="/assets/css/newwhitehome.css">
+
+        <!-- Inline shim: crypto.css is deferred below, but it's the only
+             place .floating-nav gets its fixed/hidden positioning, and the
+             element sits in the DOM right after <body>. Without this, the
+             floating nav links flash as unstyled static content until
+             crypto.css loads. -->
+        <style>
+          .floating-nav {
+            position: fixed;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+          }
+        </style>
+
+        <link rel="preload" href="/build/css/intelInput_18.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet" href="/build/css/intelInput_18.css">
+        </noscript>
+
+        <link rel="preload" href="/assets/css/countrySelect.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet" href="/assets/css/countrySelect.css">
+        </noscript>
+
+        <link rel="preload" href="/assets/css/crypto.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet" href="/assets/css/crypto.css">
+        </noscript>
+
+        <% if (metadata) { %>
+
+          <% const metaTitle=metadata.page_meta_title || metadata.blog_category_page_meta_title; const
+            metaDescription=metadata.page_meta_description || metadata.blog_category_page_meta_description; const
+            metaKeywords=metadata.page_meta_keywords || metadata.blog_category_page_meta_keywords; const
+            pageLink=metadata.page_link ? metadata.page_link : metadata.blog_category_link ?
+            `blog/category/${metadata.blog_category_link}` : "" ; %>
+
+            <title><%- metaTitle || 'Clarisco' %></title>
+
+            <% if (pageLink==="home-page" ) { %>
+              <link rel="canonical" href="https://www.clarisco.com/" />
+              <% } else if (pageLink) { %>
+                <link rel="canonical" href="https://www.clarisco.com/<%- pageLink %>" />
+                <% } %>
+
+                  <% if (metaTitle) { %>
+                    <meta name="title" content="<%- metaTitle %>">
+                    <% } %>
+
+                      <% if (metaDescription) { %>
+                        <meta name="description" content="<%- metaDescription %>">
+                        <% } %>
+
+                          <% if (metaKeywords) { %>
+                            <meta name="keywords" content="<%- metaKeywords %>">
+                            <% } %>
+
+                              <% if (metadata.pageimg) { %>
+                                <meta property="og:image" content="<%- metadata.pageimg %>" />
+                                <meta property="og:image:type" content="image/webp" />
+                                <meta property="og:image:width" content="1200" />
+                                <meta property="og:image:height" content="627" />
+                                <meta property="og:image:alt" content="<%- metaTitle || '' %>" />
+                                <meta name="twitter:image" content="<%- metadata.pageimg %>" />
+                                <% } %>
+
+                                  <% if (metaTitle || metaDescription) { %>
+                                    <meta property="og:type" content="website" />
+                                    <meta property="og:url" content="https://www.clarisco.com/<%- pageLink || '' %>" />
+                                    <meta property="og:title" content="<%- metaTitle || '' %>" />
+                                    <meta property="og:description" content="<%- metaDescription || '' %>" />
+
+                                    <meta name="twitter:card" content="summary_large_image" />
+                                    <meta name="twitter:title" content="<%- metaTitle || '' %>" />
+                                    <meta name="twitter:description" content="<%- metaDescription || '' %>" />
+                                    <meta name="twitter:site" content="@clariscosol" />
+                                    <meta name="twitter:creator" content="@clariscosol" />
+                                    <% } %>
+
+                                      <% } else { %>
+
+                                        <title>Clarisco - Blockchain, AI & IoT Software Development Company</title>
+
+                                        <% } %>
+
+
+                                          <script>
+                                            (function () {
+                                              let telemetryLoaded = false;
+
+                                              function loadScriptOnce(id, src) {
+                                                if (document.getElementById(id)) return;
+                                                const script = document.createElement("script");
+                                                script.id = id;
+                                                script.async = true;
+                                                script.src = src;
+                                                document.head.appendChild(script);
+                                              }
+
+                                              function loadTelemetry() {
+                                                if (telemetryLoaded) return;
+                                                telemetryLoaded = true;
+
+                                                window.clarity = window.clarity || function () {
+                                                  (window.clarity.q = window.clarity.q || []).push(arguments);
+                                                };
+                                                loadScriptOnce("clarity-loader", "https://www.clarity.ms/tag/mu869pal32");
+
+                                                window.twq = window.twq || function () {
+                                                  (window.twq.queue = window.twq.queue || []).push(arguments);
+                                                };
+                                                window.twq.version = '1.1';
+                                                window.twq.queue = window.twq.queue || [];
+                                                loadScriptOnce("twitter-pixel-loader", "https://static.ads-twitter.com/uwt.js");
+                                                window.twq('config', 'pywhw');
+                                              }
+
+                                              ["scroll", "mousemove", "touchstart", "click", "keydown"].forEach(function (eventName) {
+                                                window.addEventListener(eventName, loadTelemetry, { once: true, passive: true });
+                                              });
+
+                                              window.addEventListener("load", function () {
+                                                setTimeout(loadTelemetry, 5000);
+                                              }, { once: true });
+                                            })();
+                                          </script>
+
+                                          <% if (metadata) { %>
+                                            <% if(metadata.page_schema){ %>
+                                              <%- metadata.page_schema %>
+                                                <% } %>
+                                                  <% } %>
+
+
+</head>
