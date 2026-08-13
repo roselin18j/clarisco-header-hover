@@ -57,7 +57,9 @@
           <% } %>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+<style>
+  #scrollPopup{display: none;}
+</style>
 </head>
 
 <body class="nw-banner-wt-1">
@@ -231,332 +233,58 @@
     </div>
 
 
-      <div class="modal newmod fade" id="PopForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-modal="true">
-      <div class="modal-dialog modal-dialog-centered modal-xl PopForm-modal modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-body p-0">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <section class="container-fluid contact-container-new-form">
-              <div class="row justify-content-around align-items-center g-4">
-                <div class="col-xl-7 col-lg-10">
-                  <div class="py-lg-4 ps-lg-3">
-                    <p class="text-center mb-4 cont-d-1">Contact Us</p>
-                    <p class="text-center mb-4">Your Next Big Move Starts Here</p>
-    
-                    <form class="new-contact-form row" name="footercontact" id="footercontact" autocomplete="off">
-
-  <div class="col-lg-6">
-    <div class="input-group new-contact-form-section align-items-center">
-      <span class="input-group-text"> <span><i class="fa-solid fa-user"></i></span></span>
-      <input type="text" class="form-control form-control-new-contact" placeholder="Enter Your Name"
-        aria-label="footercontact" name="name" autocomplete="off">
-    </div>
-  </div>
-
-  <div class="col-lg-6">
-    <div class="input-group new-contact-form-section align-items-center">
-      <span class="input-group-text"> <span><i class="fa-solid fa-envelope"></i></span></span>
-      <input type="email" name="email" class="form-control form-control-new-contact" placeholder="Enter Your Email"
-        aria-label="Name" autocomplete="off">
-    </div>
-  </div>
-
-  <div class="col-lg-6 country-sel">
-    <div class="input-group new-contact-form-section d-flex flex-row new-contact-form-section-country">
-      <span class="input-group-text"> <span><i class="fa-solid fa-globe"></i></span></span>
-      <input type="text" id="country_selector" name="country_selector" autocomplete="off"
-        class="form-control-new-contact-2 me-auto" placeholder="Enter Your Country" value="">
-    </div>
-  </div>
-
-  <div class="col-lg-6 country-sel-2">
-    <div class="input-group new-contact-form-section d-flex flex-row new-contact-form-section-country">
-      <span class="input-group-text"> <span><i class="fa-solid fa-phone"></i></span></span>
-      <input class="form-control-new-contact-2 pt-2 w-100" type="tel" id="mob_phone" aria-label="Name"
-        autocomplete="off" name="mob_phone" placeholder="Enter Mobile Number">
-      <input type="hidden" name="phone" id="phone" />
-    </div>
-  </div>
-
-  <!-- <div class="col-lg-12">
-    <div class="input-group new-contact-form-section new-contact-form-section-placeholder">
-
-      <div class="select-icon-wrapper position-relative">
-        <span class="input-group-text d-block">
-          <span><i class="bi bi-whatsapp" id="selectedIcon"></i></span>
-        </span>
-
-        <select class="form-select menu" name="socialMediaRequirement" id="socialMediaRequirement"
-          aria-label="Default select example">
-          <option value="Whatsapp" data-icon="bi-whatsapp">Whatsapp</option>
-          <option value="Telegram" data-icon="bi-telegram">Telegram</option>
-          <option value="Teams" data-icon="bi-microsoft-teams">Teams</option>
-          <option value="Others" data-icon="bi-card-list">Others</option>
-        </select>
-      </div>
-
-      <input type="text" name="socialMedia" id="meta_itemcondition" class="form-control form-control-new-contact ps-4"
-        autocomplete="off" placeholder="Enter Whatsapp Number" aria-label="Name">
-    </div>
-  </div> -->
-
-  <!-- <div class="col-lg-12">
-    <div class="new-contact-form-section py-2 px-3 border-0 position-relative">
-      <p class="fw-bold mb-3 form-control-new-contact">Select Your Services</p>
-
-      <div class="row gy-3 gx-4 service-check">
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="custom_software_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Custom Software Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="ai_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            AI Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="web_mobile_app_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Web/Mobile App Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="cryptocurrency_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Cryptocurrency Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="crypto_exchange_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Crypto Exchange Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="bot_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Bot Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="neo_banking_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Neo Banking Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="smart_contract_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Smart Contract Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="web3_dapp_defi_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Web3 DApp or DeFi Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="wallet_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Wallet Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="token_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Token Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="business_consulting"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Business Consulting
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="startup_enterprise_product_development"
-              class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Startup/Enterprise Product Development
-          </label>
-        </div>
-
-        <div class="col-6 col-md-4">
-          <label class="service-option">
-            <input type="checkbox" name="requirement" value="others" class="form-control form-control-new-contact" />
-            <span class="checkmark"></span>
-            Others
-          </label>
-        </div>
-
-      </div>
-
-    </div>
-  </div> -->
-
-  <div class="col-lg-12">
-    <div class="input-group new-contact-form-section">
-      <span class="input-group-text"> <span><i class="fa-solid fa-list"></i></span></span>
-      <select class="form-select" name="requirement" id="requirement" aria-label="Default select example">
-        <option value="" selected hidden>Select your services</option>
-        <option value="ai_ml_development">AI & ML Development Services</option>
-        <option value="crypto_exchange_development">Crypto Exchange Development Services</option>
-        <option value="blockchain_development">Blockchain Development Services</option>
-        <option value="rwa_tokenization_development">RWA Tokenization Platform Development</option>
-        <option value="prediction_market_platform_development">Prediction Market Platform Development</option>
-        <option value="ico_ieo_sto_development">ICO / IEO / STO Development Services</option>
-        <option value="crypto_wallet_development">Crypto Wallet Development Services</option>
-        <option value="trading-bot-development">Trading Bot Development</option>
-        <option value="game_development">Game Development Services</option>
-        <option value="defi_development">DeFi Development Services</option>
-        <option value="banking_software_development">Banking Software Development</option>
-        <option value="web_mobile_app_development">Custom Web & Mobile App Development</option>
-        <option value="ar_vr_vfx_services">AR / VR / VFX Services</option>
-        <option value="business_consulting">Business Consulting Services</option>
-        <option value="hire-dedicated-developers">Hire Dedicated Developers / Resources</option>
-        <option value="others">Other (Please Specify)</option>
-      </select>
-      <small id="requirement-error" class="text-danger"></small>
-    </div>
-  </div>
-
-  <div class="col-lg-12">
-    <div class="input-group new-contact-form-section align-items-start">
-      <span class="input-group-text pt-0"> <span><i class="fa-solid fa-square-pen"></i></span></span>
-      <textarea id="message" name="message" class="form-control form-control-new-contact" autocomplete="off"
-        placeholder="Write Your Requirements.." style="height: 100px;width: auto;"></textarea>
-    </div>
-  </div>
-
-  <div class="col-lg-12">
-    <div id="recaptcha-container"></div>
-    <div class="loader-button position-relative d-flex">
-      <button class="contact-new-form-button" id="contact_submit_btn">
-        submit<i class="fa-solid fa-angle-right"></i>
-      </button>
-      <div class="spinner-border position-relative spinning-rotator" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-  </div>
-
-</form>
-                  </div>
-                </div>
-                <div class="col-xl-5 col-lg-10 text-center d-xl-block d-none">
-                  <p class="mt-lg-0 mt-5">Skip the queue and book a call with our Founder</p>
-                  <div class="col-6 col-md-4 col-lg-6 mx-auto">
-                    <img loading="lazy" src="https://assets.clarisco.com/clarisco-images/nw-w-home/CEO/CEO-1-2.webp"
-                      class="img-fluid" alt="Founder">
-                  </div>
-                  <h5 class="mb-2 mt-3">Priyadharshini Suriyanarayanan</h5>
-                  <p class="mb-3">Founder & CEO, Clarisco Solutions Private Limited</p>
-                  <div class="col-lg-8 mx-auto">
-                    <p>Tech enthusiast with 12+ years of experience delivering 650+ web, mobile, blockchain, and AI
-                      solutions
-                      globally.</p>
-                  </div>
-                  <div class="d-flex justify-content-center flex-row gap-3">
-                    <a class="anc-tag" href="https://www.linkedin.com/in/priyadharshini-suriyanarayanan-a8490b176/"
-                      target="_blank" rel="noopener noreferrer"
-                      aria-label="Connect with founder Priyadharshini Suriyanarayanan on LinkedIn"> <img loading="lazy"
-                        style="width: 35px;height: auto;"
-                        src="https://assets.clarisco.com/clarisco-images/nw-w-home/CEO/linkedin.webp" alt="Founder"></a>
-                    <a href="https://wa.me/+918438836619" target="_blank" class="anc-tag" rel="noopener noreferrer"
-                      aria-label="Message Our Clarisco Team on Whatsapp"> <img loading="lazy"
-                        style="width: 35px;height: auto;"
-                        src="https://assets.clarisco.com/clarisco-images/nw-w-home/CEO/whatsapp.webp" alt="Founder"></a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=business@clarisco.com&su=SUBJECT&body=BODY&bcc=priyadharshini@clarisco.com"
-                      target="_blank" class="anc-tag" rel="noopener noreferrer"
-                      aria-label="Message Our Clarisco Team on Email">
-                      <i class="fa-solid fa-envelope new-social-fixed-icon-3"
-                        style="width: 35px;height: 35px;font-size: 18px;"></i>
-                    </a>
-                    <a href="https://telegram.me/ClariscoSolutions" target="_blank" class="anc-tag"
-                      rel="noopener noreferrer" aria-label="Message Our Clarisco Team on Telegram">
-                      <i class="fa-solid fa-paper-plane new-social-fixed-icon-3"
-                        style="width: 35px;height: 35px;font-size: 18px; background-color: #28A4E3;"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-
-        </div>
-      </div>
-    </div>
+      <div id="scrollPopup">
+    <%- include('../Contact/scrollpopup') %>
+</div>
 
     <%- include('../common-new/footer') %>
 
       <script src="../../assets/js/blogcontactform.js"></script>
 
-        <script>
+       <script>
         document.addEventListener("DOMContentLoaded", function () {
-          const modalElement = document.querySelector(".newmod");
+    let shown = false;
 
-          if (!modalElement) return;
+    window.addEventListener("scroll", function () {
+        if (shown) return;
 
-          const popup = new bootstrap.Modal(modalElement);
-          let popupShown = false;
+        if (window.scrollY >= window.innerHeight * 2.5) {
+            shown = true;
+            document.getElementById("scrollPopup").style.display = "block";
+        }
+    });
+});
+       </script>
 
-          window.addEventListener("scroll", function () {
+   <script>
+    document.addEventListener("DOMContentLoaded", () => {
 
-            if (popupShown) return;
+    const modalElement = document.getElementById("PopForm");
 
-            // Show popup after scrolling 150vh
-            if (window.scrollY >= window.innerHeight * 2.5) {
-              popupShown = true;
-              popup.show();
-            }
+    if (!modalElement) {
+        console.error("PopForm not found");
+        return;
+    }
 
-          });
-        });
-      </script>
+    let popupShown = false;
 
+    window.addEventListener("scroll", () => {
+
+        if (popupShown) return;
+
+        if (window.scrollY >= window.innerHeight * 2.5) {
+
+            popupShown = true;
+
+            const popup = bootstrap.Modal.getOrCreateInstance(modalElement);
+            popup.show();
+
+        }
+
+    });
+
+});
+   </script>
       <script>
         function scrollToSection(targetId) {
           const element = document.getElementById(targetId);

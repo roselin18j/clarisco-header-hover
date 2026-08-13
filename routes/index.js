@@ -90,6 +90,95 @@ router.get("/game-development-company", async function (req, res) {
   );
 });
 
+router.get("/aaa-game-co-development-company", async function (req, res) {
+  const path = req.path.split("/");
+
+  async.parallel(
+    {
+      cmsdata: function (cb) {
+        pages.findOne({ page_link: path[1] }).exec(cb);
+      },
+
+      blogsdata: function (cb) {
+        blogs
+          .find({ blog_category: "Game" }) 
+          .limit(3)
+          .sort({ _id: -1 })
+          .exec(cb);
+      },
+    },
+    function (err, results) {
+      if (err) {
+        return res.status(500).send(err);
+      }
+
+      res.render("Game/co-game", {
+        metadata: results.cmsdata,
+        blogsdata: results.blogsdata,
+      });
+    }
+  );
+});
+
+router.get("/full-cycle-game-development-outsourcing", async function (req, res) {
+  const path = req.path.split("/");
+
+  async.parallel(
+    {
+      cmsdata: function (cb) {
+        pages.findOne({ page_link: path[1] }).exec(cb);
+      },
+
+      blogsdata: function (cb) {
+        blogs
+          .find({ blog_category: "Game" }) 
+          .limit(3)
+          .sort({ _id: -1 })
+          .exec(cb);
+      },
+    },
+    function (err, results) {
+      if (err) {
+        return res.status(500).send(err);
+      }
+
+      res.render("Game/fullcycle-gamedevelopment", {
+        metadata: results.cmsdata,
+        blogsdata: results.blogsdata,
+      });
+    }
+  );
+});
+
+router.get("/unity-game-development-services", async function (req, res) {
+  const path = req.path.split("/");
+
+  async.parallel(
+    {
+      cmsdata: function (cb) {
+        pages.findOne({ page_link: path[1] }).exec(cb);
+      },
+
+      blogsdata: function (cb) {
+        blogs
+          .find({ blog_category: "Game" }) 
+          .limit(3)
+          .sort({ _id: -1 })
+          .exec(cb);
+      },
+    },
+    function (err, results) {
+      if (err) {
+        return res.status(500).send(err);
+      }
+
+      res.render("Game/unity-gamedevelopment", {
+        metadata: results.cmsdata,
+        blogsdata: results.blogsdata,
+      });
+    }
+  );
+});
 
 router.get("/case-study/gold-tokenization-platform", function (req, res) {
   const path = req.path.split("/");

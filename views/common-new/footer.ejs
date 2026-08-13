@@ -230,7 +230,7 @@
           </a>
 
           <a target="_blank" rel="noopener noreferrer" class="iconic-hvr-btns"
-            href="https://www.reddit.com/user/Clarisco" aria-label="Clarisco Reddit">
+            href="https://www.reddit.com/user/clarisco_team/" aria-label="Clarisco Reddit">
             <i class="fa-brands fa-reddit iconic-hover"></i>
           </a>
 
@@ -367,7 +367,151 @@
 
     <script defer src="../../assets/js/popupcontactform.js"></script>
 
+<script>
+  function openMenu(event, targetId) {
+    var target = targetId.trim();
+    var hoveredBtn = event.currentTarget;
 
+    var targetSection = document.getElementById(target);
+
+    if (!targetSection) {
+      console.warn(
+        'openMenu: no element found with id="' + target + '"'
+      );
+      return;
+    }
+
+    // -----------------------------------------
+    // 1. Remove active from previous main menu
+    // -----------------------------------------
+    var btnGroup =
+      hoveredBtn.closest('ul') || hoveredBtn.parentElement;
+
+    if (btnGroup) {
+      btnGroup
+        .querySelectorAll('.side-btn.active')
+        .forEach(function (btn) {
+          btn.classList.remove('active');
+        });
+    }
+
+    // -----------------------------------------
+    // 2. Remove active from main content sections
+    // -----------------------------------------
+    var sectionParent = targetSection.parentElement;
+
+    if (sectionParent) {
+      Array.prototype.forEach.call(
+        sectionParent.children,
+        function (sibling) {
+          if (
+            sibling.classList &&
+            sibling.classList.contains('content-section')
+          ) {
+            sibling.classList.remove('active');
+          }
+        }
+      );
+    }
+
+    // -----------------------------------------
+    // 3. Activate current main button
+    // -----------------------------------------
+    hoveredBtn.classList.add('active');
+
+    // -----------------------------------------
+    // 4. Show current main menu
+    // -----------------------------------------
+    targetSection.classList.add('active');
+
+    // -----------------------------------------
+    // 5. RESET THIS MENU'S SUBMENU
+    // -----------------------------------------
+    resetSubMenu(targetSection);
+  }
+
+
+  function openSubMenu(event, targetId) {
+    var target = targetId.trim();
+    var hoveredBtn = event.currentTarget;
+
+    var targetSection = document.getElementById(target);
+
+    if (!targetSection) {
+      console.warn(
+        'openSubMenu: no element found with id="' + target + '"'
+      );
+      return;
+    }
+
+    // -----------------------------------------
+    // Remove active from previous sub-button
+    // -----------------------------------------
+    var btnGroup = hoveredBtn.closest('ul');
+
+    if (btnGroup) {
+      btnGroup
+        .querySelectorAll('.side-btn.active')
+        .forEach(function (btn) {
+          btn.classList.remove('active');
+        });
+
+      // Add active to current sub-button
+      hoveredBtn.classList.add('active');
+    }
+
+    // -----------------------------------------
+    // Hide previous sub-content
+    // -----------------------------------------
+    var sectionParent = targetSection.parentElement;
+
+    if (sectionParent) {
+      sectionParent
+        .querySelectorAll(':scope > .sub-content-section')
+        .forEach(function (section) {
+          section.classList.remove('active');
+        });
+    }
+
+    // -----------------------------------------
+    // Show current sub-content
+    // -----------------------------------------
+    targetSection.classList.add('active');
+  }
+
+
+  // -----------------------------------------
+  // Reset submenu to first button/content
+  // -----------------------------------------
+  function resetSubMenu(menu) {
+
+    if (!menu) return;
+
+    // Find submenu buttons
+    var buttons = menu.querySelectorAll('.side-btn');
+
+    if (buttons.length) {
+      buttons.forEach(function (btn) {
+        btn.classList.remove('active');
+      });
+
+      // First submenu button active
+      buttons[0].classList.add('active');
+    }
+
+    // Find submenu contents
+    var sections = menu.querySelectorAll('.sub-content-section');
+
+    if (sections.length) {
+      sections.forEach(function (section) {
+        section.classList.remove('active');
+      });
+
+      // First submenu content active
+      sections[0].classList.add('active');
+    }
+  }
+</script>
 
     <script>
       window.addEventListener('load', function () {
@@ -684,150 +828,6 @@
       window.addEventListener("resize", equalHeightCards);
     </script>
 
-<script>
-  function openMenu(event, targetId) {
-    var target = targetId.trim();
-    var hoveredBtn = event.currentTarget;
 
-    var targetSection = document.getElementById(target);
-
-    if (!targetSection) {
-      console.warn(
-        'openMenu: no element found with id="' + target + '"'
-      );
-      return;
-    }
-
-    // -----------------------------------------
-    // 1. Remove active from previous main menu
-    // -----------------------------------------
-    var btnGroup =
-      hoveredBtn.closest('ul') || hoveredBtn.parentElement;
-
-    if (btnGroup) {
-      btnGroup
-        .querySelectorAll('.side-btn.active')
-        .forEach(function (btn) {
-          btn.classList.remove('active');
-        });
-    }
-
-    // -----------------------------------------
-    // 2. Remove active from main content sections
-    // -----------------------------------------
-    var sectionParent = targetSection.parentElement;
-
-    if (sectionParent) {
-      Array.prototype.forEach.call(
-        sectionParent.children,
-        function (sibling) {
-          if (
-            sibling.classList &&
-            sibling.classList.contains('content-section')
-          ) {
-            sibling.classList.remove('active');
-          }
-        }
-      );
-    }
-
-    // -----------------------------------------
-    // 3. Activate current main button
-    // -----------------------------------------
-    hoveredBtn.classList.add('active');
-
-    // -----------------------------------------
-    // 4. Show current main menu
-    // -----------------------------------------
-    targetSection.classList.add('active');
-
-    // -----------------------------------------
-    // 5. RESET THIS MENU'S SUBMENU
-    // -----------------------------------------
-    resetSubMenu(targetSection);
-  }
-
-
-  function openSubMenu(event, targetId) {
-    var target = targetId.trim();
-    var hoveredBtn = event.currentTarget;
-
-    var targetSection = document.getElementById(target);
-
-    if (!targetSection) {
-      console.warn(
-        'openSubMenu: no element found with id="' + target + '"'
-      );
-      return;
-    }
-
-    // -----------------------------------------
-    // Remove active from previous sub-button
-    // -----------------------------------------
-    var btnGroup = hoveredBtn.closest('ul');
-
-    if (btnGroup) {
-      btnGroup
-        .querySelectorAll('.side-btn.active')
-        .forEach(function (btn) {
-          btn.classList.remove('active');
-        });
-
-      // Add active to current sub-button
-      hoveredBtn.classList.add('active');
-    }
-
-    // -----------------------------------------
-    // Hide previous sub-content
-    // -----------------------------------------
-    var sectionParent = targetSection.parentElement;
-
-    if (sectionParent) {
-      sectionParent
-        .querySelectorAll(':scope > .sub-content-section')
-        .forEach(function (section) {
-          section.classList.remove('active');
-        });
-    }
-
-    // -----------------------------------------
-    // Show current sub-content
-    // -----------------------------------------
-    targetSection.classList.add('active');
-  }
-
-
-  // -----------------------------------------
-  // Reset submenu to first button/content
-  // -----------------------------------------
-  function resetSubMenu(menu) {
-
-    if (!menu) return;
-
-    // Find submenu buttons
-    var buttons = menu.querySelectorAll('.side-btn');
-
-    if (buttons.length) {
-      buttons.forEach(function (btn) {
-        btn.classList.remove('active');
-      });
-
-      // First submenu button active
-      buttons[0].classList.add('active');
-    }
-
-    // Find submenu contents
-    var sections = menu.querySelectorAll('.sub-content-section');
-
-    if (sections.length) {
-      sections.forEach(function (section) {
-        section.classList.remove('active');
-      });
-
-      // First submenu content active
-      sections[0].classList.add('active');
-    }
-  }
-</script>
     </body>
     </html>

@@ -770,8 +770,12 @@ textarea {
         font-size: 30px;
         border: 1px solid #0000002d;
         color: #000000;
-        padding: 20px;
-        border-radius: 50%
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
     }
 
     .thankyou-image img {
@@ -10367,7 +10371,10 @@ textarea {
     border-radius: 50px;
     animation: blinkWave 1.5s infinite ease-in-out;
 }
-.nav-link.active .nav-pitch-link:after{background-color: #fff;}
+
+.nav-link.active .nav-pitch-link:after {
+    background-color: #fff;
+}
 
 @keyframes blinkWave {
     0% {
