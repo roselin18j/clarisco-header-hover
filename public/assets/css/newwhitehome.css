@@ -1304,13 +1304,15 @@
         }
 
     }
-
+.blg-det{
+    overflow-x: hidden;
+}
     .contact-container-new-form {
         color: #000;
         box-shadow: none;
         background: #e6eaf96b;
         border: 1px solid #E6EAF9;
-        overflow: visible;
+        /* overflow: visible; */
 
         .new-contact-form-section {
             border-bottom: 1px solid #d3d3d3;

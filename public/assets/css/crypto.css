@@ -1380,14 +1380,19 @@ body.modal-open .top-home-new-social-fixed.next-searching {
 }
 
 
-
+.blog-btm-row .read-more-cta{
+  display: block;
+}
 
 .blog-btm-row .read-more-cta,
 .blog-btm-row .ryt p,
 .blog-btm-row .ryt span {
   font-size: 14px;
 }
-
+.blog-btm-row .ryt p,
+.blog-btm-row .ryt span {
+  font-weight: 800;
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -1540,3 +1545,6 @@ body.modal-open .top-home-new-social-fixed.next-searching {
   }
 }
 
+.read-more-fontfamily figure.table {
+	margin: 34px auto;
+}
