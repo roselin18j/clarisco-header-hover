@@ -10428,3 +10428,29 @@ button[disabled] {
         font-size: 24px;
     }
 }
+
+@media screen and (max-width : 880px) {
+    .nw-banner-sec-5 .row-cols-3 > *{
+        padding: 0 12px;
+        margin-top: 12px;
+    }
+    .nw-banner-sec-5 .card .card-body{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width : 550px) {
+    .nw-banner-sec-5 .row-cols-3 > *{
+        padding: 0 4px;
+        margin-top: 5px;
+    }
+
+    .nw-banner-sec-5 .card .card-body{
+        padding: 5px;
+
+        p{
+            font-size: 11px !important;
+        }
+    }
+
+}
