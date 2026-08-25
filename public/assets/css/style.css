@@ -10061,6 +10061,7 @@ textarea {
         border: 1px solid #00000021;
         width: fit-content;
         margin: auto;
+        justify-content: center;
         border-radius: 50px;
 
         @media (max-width: 767px) {
@@ -10099,6 +10100,7 @@ textarea {
         #pills-tab .nav-item {
             width: 50%;
             display: flex;
+
         }
 
         #pills-tab .nav-link {
@@ -10112,6 +10114,12 @@ textarea {
         }
     }
 
+    @media (max-width : 550px) {
+        
+    #pills-tab .nav-item {
+        width: 100%;
+    }
+    }
     .card-text {
         font-size: 14px;
         margin-bottom: 0px;
@@ -10430,27 +10438,30 @@ button[disabled] {
 }
 
 @media screen and (max-width : 880px) {
-    .nw-banner-sec-5 .row-cols-3 > *{
+    .nw-banner-sec-5 .row-cols-3>* {
         padding: 0 12px;
         margin-top: 12px;
     }
-    .nw-banner-sec-5 .card .card-body{
+
+    .nw-banner-sec-5 .card .card-body {
         padding: 10px;
     }
+
 }
 
 @media screen and (max-width : 550px) {
-    .nw-banner-sec-5 .row-cols-3 > *{
+    .nw-banner-sec-5 .row-cols-3>* {
         padding: 0 4px;
         margin-top: 5px;
     }
 
-    .nw-banner-sec-5 .card .card-body{
+    .nw-banner-sec-5 .card .card-body {
         padding: 5px;
 
-        p{
+        p {
             font-size: 11px !important;
         }
     }
+
 
 }

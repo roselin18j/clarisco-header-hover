@@ -430,23 +430,23 @@ body.modal-open .top-home-new-social-fixed.next-searching {
           }
 
 
-  scrollbar-width: thin;
-  scrollbar-color: #fff transparent;
+          scrollbar-width: thin;
+          scrollbar-color: #fff transparent;
 
 
 
-::-webkit-scrollbar {
-  width: 6px;
-}
+          ::-webkit-scrollbar {
+            width: 6px;
+          }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
+          ::-webkit-scrollbar-track {
+            background: transparent;
+          }
 
-::-webkit-scrollbar-thumb {
-  background: #7d73d8;
-  border-radius: 10px;
-}
+          ::-webkit-scrollbar-thumb {
+            background: #7d73d8;
+            border-radius: 10px;
+          }
 
         }
 
@@ -1072,9 +1072,14 @@ body.modal-open .top-home-new-social-fixed.next-searching {
       }
 
       @media screen and (max-width : 1200px) {
-        width: 110px;
-        height: 110px;
+        width: 90px;
+        height: 90px;
       }
+
+      /* @media screen and (max-width : 991px) {
+        width: 90px;
+        height: 100px;
+      } */
 
       @media screen and (max-width : 881px) {
         width: 90px;
@@ -1100,7 +1105,11 @@ body.modal-open .top-home-new-social-fixed.next-searching {
     b {
       transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
       line-height: 18px;
-      font-size: 15px;
+      font-size: 14px;
+
+      @media screen and (max-width : 1300px) {
+        font-size: 13px;
+      }
     }
 
     &:hover b {
@@ -1163,6 +1172,11 @@ body.modal-open .top-home-new-social-fixed.next-searching {
       height: 130px;
       overflow-y: auto;
       padding-right: 10px;
+
+      @media screen and (max-width : 1200px) {
+        transform: translateY(-22px);
+        font-size: 11px;
+      }
 
       @media screen and (max-width : 991px) {
         height: auto !important;
@@ -1400,7 +1414,7 @@ body.modal-open .top-home-new-social-fixed.next-searching {
 }
 
 
-.blog-btm-row .read-more-cta{
+.blog-btm-row .read-more-cta {
   display: block;
 }
 
@@ -1409,6 +1423,7 @@ body.modal-open .top-home-new-social-fixed.next-searching {
 .blog-btm-row .ryt span {
   font-size: 14px;
 }
+
 .blog-btm-row .ryt p,
 .blog-btm-row .ryt span {
   font-weight: 800;
@@ -1566,6 +1581,21 @@ body.modal-open .top-home-new-social-fixed.next-searching {
 }
 
 .read-more-fontfamily figure.table {
-	margin: 34px auto;
+  margin: 34px auto;
 }
 
+.nw-banner-sec-6-1 {
+  .card{
+    .card-body{
+      img{
+        width: 100%;
+        height: 220px;
+        border-radius: 15px;
+        object-fit: cover;
+        @media (max-width : 480px){
+          height: 200px;
+        }
+      }
+    }
+  }
+}
