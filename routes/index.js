@@ -270,6 +270,36 @@ router.get("/game-porting-services-cross-platform-development-studio", async fun
   );
 });
 
+router.get("/game-qa-testing-services", async function (req, res) {
+  const path = req.path.split("/");
+
+  async.parallel(
+    {
+      cmsdata: function (cb) {
+        pages.findOne({ page_link: path[1] }).exec(cb);
+      },
+
+      blogsdata: function (cb) {
+        blogs
+          .find({ blog_category: "Game" }) 
+          .limit(3)
+          .sort({ _id: -1 })
+          .exec(cb);
+      },
+    },
+    function (err, results) {
+      if (err) {
+        return res.status(500).send(err);
+      }
+
+      res.render("Game/game-qa-testing-services", {
+        metadata: results.cmsdata,
+        blogsdata: results.blogsdata,
+      });
+    }
+  );
+});
+
 router.get("/case-study/gold-tokenization-platform", function (req, res) {
   const path = req.path.split("/");
   console.log(path[2]);
