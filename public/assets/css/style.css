@@ -5705,10 +5705,10 @@ textarea {
     font-size: 32PX !important
 }
 
-.trending-post-section {
+/* .trending-post-section {
     position: sticky !important;
     top: 10%
-}
+} */
 
 @media (min-width:567px) and (max-width:991px) {
     .custom-webcover {

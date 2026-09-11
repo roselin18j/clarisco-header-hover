@@ -1540,7 +1540,7 @@ body.modal-open .top-home-new-social-fixed.next-searching {
     li {
       position: relative;
       padding-left: 28px;
-      color: #555;
+      color: #000;
       font-size: 16px;
       line-height: 24px;
 
@@ -1600,3 +1600,4 @@ body.modal-open .top-home-new-social-fixed.next-searching {
     }
   }
 }
+

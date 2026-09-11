@@ -116,20 +116,21 @@
     <div class="container-fluid pb-5 blog-readmore-clarisco-site mt-5">
       <div class="row justify-content-center g-4 read-more-nwt-width mx-auto">
         <% if (blogdata.blog_table_of_contents && blogdata.blog_table_of_contents.length> 0) { %>
-          <div class="col-lg-2">
+          <div class="col-lg-3">
             <div class="trending-post-section">
               <p class="mb-3 nw-w-head-3">Table of Contents</p>
               <% function generateId(title){ return title .replace(/&nbsp;/gi, ' ' ) .toLowerCase() .trim()
                 .replace(/[^\w\s]/g, '' ) .replace(/\s+/g, '-' ); } %>
+                    <div class="tab-box d-none d-lg-block" style="border-radius: 15px;">
                 <nav id="navbar-example3"
-                  class="toc-desktop h-100 flex-column align-items-stretch pe-4 border-end d-none d-lg-block">
+                  class="toc-desktop h-100 flex-column align-items-stretch pe-4 d-none d-lg-block">
                   <% blogdata.blog_table_of_contents.forEach(function(item){ const id=generateId(item); %>
                     <a class="nav-link toc-link" data-target="<%= id %>" href="javascript:void(0);">
                       <%= item %>
                     </a>
                     <% }) %>
                 </nav>
-
+</div>
                 <div class="d-lg-none">
                   <select class="form-select toc-select">
                     <option value="">Select Section</option>
@@ -140,15 +141,79 @@
                       <% }) %>
                   </select>
                 </div>
+<div class="author-box box">
+                <b class="mb-2" style="display: block;">Author's Bio</b>
+                  <div class="ath-img">
+                    <img src="https://assets.clarisco.com/clarisco-images/nw-w-home/CEO/CEO-1-2.webp" class="img-fluid blog-wh-nw-auth" alt="Founder">
+                  </div>
+       
+                  <div class="mt-4 mt-md-2">
+                    <b class="tmt-txt-1 mb-1" style="display: block;">Priyadharshini Suriyanarayanan</b>
+                                  <div class="d-flex flex-row gap-2 mb-3" data-aos="fade-up">
+                <a class="anc-tag" href="https://www.linkedin.com/in/priyadharshini-suriyanarayanan-a8490b176/"
+                  target="_blank" rel="noopener noreferrer"
+                  aria-label="Connect with founder Priyadharshini Suriyanarayanan on LinkedIn"><img
+                    style="width: 24px; height: auto;"
+                    src="https://assets.clarisco.com/clarisco-images/nw-w-home/CEO/linkedin.webp" alt="Founder"></a>
+                <a href="https://wa.me/+918438836619" target="_blank" class="anc-tag" rel="noopener noreferrer"
+                  aria-label="Message founder Priyadharshini Suriyanarayanan on WhatsApp"><img
+                    style="width: 24px; height: auto;"
+                    src="https://assets.clarisco.com/clarisco-images/nw-w-home/CEO/whatsapp.webp" alt="Founder"></a>
+              </div>
+                    <p class="nw-w-txt-2">The Founder and CEO of Clarisco Solutions Private Limited, a product engineering company focused on AI and Web3 development.</p> 
 
+                    <p class="nw-w-txt-2">With over 12 years of experience in AI, blockchain, and enterprise software, she has led more than 650 product launches across categories including crypto exchanges, DeFi protocols, AI agents, generative AI products, tokenisation platforms, and NFT ecosystems. </p>
+                    <p class="nw-w-txt-2">She specializes in AI-driven Web3 product engineering and has built a reputation for delivering systems that work in production environments.</p>
+                  <button class="nw-w-bann-1 mt-2" data-bs-toggle="modal" data-bs-target="#PopForm">Get a Free Demo</button>
+                  </div>
+              </div>
             </div>
+              <div class="tab-box form-box">
+                    <b>Contact us</b>
+                  <%- include('../Contact/ShortForm') %>
+              </div>
           </div>
 
           <% } %>
-            <div class="col-lg-9">
+            <div class="col-lg-8">
               <div>
                 <img src=<%- blogdata.blogimg %> onerror="this.onerror=null;this.src='/assets/blogs.jpg';" alt="..." />
               </div>
+
+<%
+    var validAiSummary = [];
+
+    if (Array.isArray(blogdata.blog_ai)) {
+        validAiSummary = blogdata.blog_ai.filter(function(item) {
+            return item && item.trim() !== "";
+        });
+    }
+%>
+
+<% if (validAiSummary.length > 0) { %>
+<section class="py-5 pb-3 summary-section">
+    <div class="container">
+        <div class="card border-0 shadow-sm rounded-4 p-4 summary-card">
+
+            <div class="summary-badge mb-4">
+                <span class="spa lft">✨</span>
+                AI Summary
+                <span class="spa ryt">✨</span>
+            </div>
+
+            <ul class="summary-list mb-0">
+                <% validAiSummary.forEach(function(item) { %>
+                    <li class="mb-3">
+                        <%- item.trim() %>
+                    </li>
+                <% }); %>
+            </ul>
+
+        </div>
+    </div>
+</section>
+<% } %>
+    
                 <!-- <section class="py-5 pb-3 summary-section">
                 <div class="container">
                   <div class="card border-0 shadow-sm rounded-4 p-4 summary-card">
@@ -183,6 +248,9 @@
                   </div>
                 </div>
               </section> -->
+              
+             
+             
               <div class="mt-4 read-more-fontfamily">
                 <% function generateId(title) { return title .replace(/&nbsp;/gi, ' ' ) .replace(/&nsbp;/gi, ' ' )
                   .toLowerCase() .trim() .replace(/[^\w\s]/g, '' ) .replace(/\s+/g, '-' ); } let content=blogdata.blog
@@ -202,9 +270,96 @@
                     content = content.replace(/<p[^>]>\s<\/p>/gi, '&nbsp;');
                         %>
 
-                        <%- content %>
+              <%- content %>
+<%
+    var validFaqs = [];
+
+    if (Array.isArray(blogdata.blog_faq)) {
+        validFaqs = blogdata.blog_faq.filter(function(faq) {
+
+            if (!faq) {
+                return false;
+            }
+
+            var question = faq.question
+                ? faq.question.trim()
+                : "";
+
+            var answer = faq.answer
+                ? faq.answer.trim()
+                : "";
+
+            return question !== "" || answer !== "";
+        });
+    }
+%>
+
+
+<% if (validFaqs.length > 0) { %>
+
+<div class="faq-section" id="faqAccordion">
+
+    <h2 class="faq-title">
+        Frequently Asked Questions
+    </h2>
+
+    <% validFaqs.forEach(function(faq, index) { %>
+
+    <div class="faq-card">
+
+        <% if (faq.question && faq.question.trim() !== "") { %>
+
+        <button
+            class="faq-btn collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqAnswer<%= index %>"
+            aria-expanded="false"
+        >
+
+            <div class="faq-left">
+
+                <span class="faq-number">
+                    <%= index + 1 %>
+                </span>
+
+                <span class="faq-question">
+                    <%= faq.question.trim() %>
+                </span>
+
+            </div>
+
+            <span class="faq-icon">
+                +
+            </span>
+
+        </button>
+
+        <% } %>
+
+        <% if (faq.answer && faq.answer.trim() !== "") { %>
+
+        <div
+            id="faqAnswer<%= index %>"
+            class="collapse" data-bs-parent="#faqAccordion"
+        >
+            <div class="faq-answer">
+                <%= faq.answer.trim() %>
+            </div>
+        </div>
+
+        <% } %>
+
+    </div>
+
+    <% }); %>
+
+</div>
+
+<% } %>
+
                           <div class="blogs-total-buttons text-center d-flex justify-content-between w-100 mt-4">
-                            <button onclick="prevBlog('<%- blogdata.id %>')"
+                            <button onclick="prevBlog('<%- blogdata._id %>')"
                               class="nft-new-banner-button-1 previou-arrow-buttons previous-altering-button "
                               id="prevBtn">
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -214,7 +369,7 @@
                               </svg><span style="font-size: 14px;">Prev articles</span>
                             </button>
 
-                            <button onclick="nextBlog('<%- blogdata.id %>')"
+                            <button onclick="nextBlog('<%- blogdata._id %>')"
                               class="nft-new-banner-button-1 next-arrow-buttons next-altering-button" id="nextBtn">
                               <span style="font-size: 14px;">Next articles</span> <svg
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -330,11 +485,11 @@ console.log(element,"element");
       <script>
         $(document).ready(function () {
 
-          const blogId = " <%- blogdata.id %> ";
+          const blogId = "<%- blogdata._id %>";
 
           $.ajax({
             method: "GET",
-            url: `https://www.clarisco.com/adjacentBlogs/${blogId}`,
+            url: `/adjacentBlogs/${blogId}`,
             encode: true,
           }).done(function (response) {
             console.log(response)
@@ -364,11 +519,11 @@ console.log(element,"element");
         function nextBlog(id) {
           $.ajax({
             method: "GET",
-            url: `https://www.clarisco.com/nextBlog/${id}`,
+            url: `/nextBlog/${id}`,
             encode: true,
           }).done(function (response) {
             var link = response.blog_link
-            window.location.href = `https://www.clarisco.com/${link}`
+            window.location.href = `/${link}`
 
           });
         }
@@ -378,11 +533,11 @@ console.log(element,"element");
         function prevBlog(id) {
           $.ajax({
             method: "GET",
-            url: `https://www.clarisco.com/prevBlog/${id}`,
+            url: `/prevBlog/${id}`,
             encode: true,
           }).done(function (response) {
             var link = response.blog_link
-            window.location.href = `https://www.clarisco.com/${link}`
+            window.location.href = `/${link}`
 
           });
         }
