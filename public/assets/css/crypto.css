@@ -931,6 +931,7 @@ body.modal-open .top-home-new-social-fixed.next-searching {
     width: 100%;
 
     .portfolio-nav {
+      padding-bottom: 10px;
       button {
         border: 1px solid #d8d8d8;
         background: transparent;
