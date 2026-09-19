@@ -61,6 +61,7 @@ body {
     border-radius: 10px
 }
 
+.accordion-item a{font-weight: bold;}
 .form-select {
     cursor: pointer;
 }
@@ -10115,11 +10116,12 @@ textarea {
     }
 
     @media (max-width : 550px) {
-        
-    #pills-tab .nav-item {
-        width: 100%;
+
+        #pills-tab .nav-item {
+            width: 100%;
+        }
     }
-    }
+
     .card-text {
         font-size: 14px;
         margin-bottom: 0px;
@@ -10464,4 +10466,56 @@ button[disabled] {
     }
 
 
+}
+
+.youtube-video {
+    width: 100%;
+    max-width: 100%;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 800px;
+    background-color: transparent;
+
+    iframe {
+        width: 100%;
+        background-color: transparent;
+        height: 800px;
+        object-fit: cover;
+        border: 0;
+        display: block;
+        margin-right: 0;
+
+        @media screen and (max-width : 1200px) {
+            height: 700px;
+        }
+
+        @media screen and (max-width : 1000px) {
+            height: 600px;
+        }
+
+        @media screen and (max-width : 800px) {
+            height: 500px;
+        }
+
+        @media screen and (max-width : 550px) {
+            height: 400px;
+        }
+    }
+
+    @media screen and (max-width : 1200px) {
+        height: 700px;
+    }
+
+    @media screen and (max-width : 1000px) {
+        height: 600px;
+    }
+
+    @media screen and (max-width : 800px) {
+        height: 500px;
+    }
+
+    @media screen and (max-width : 550px) {
+        height: 400px;
+    }
 }

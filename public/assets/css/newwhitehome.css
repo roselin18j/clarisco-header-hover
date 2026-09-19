@@ -537,7 +537,7 @@
 
     .nwe-toke-txt-3 {
         font-size: 14px;
-        color: #0000008f;
+        color: #000;
 
         @media (max-width: 992px) {
             font-size: 14px;
