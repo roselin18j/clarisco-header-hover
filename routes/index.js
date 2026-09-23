@@ -6463,11 +6463,21 @@ router.get("/adaptive-ai-development-company", async function (req, res) {
       cmsdata: function (cb) {
         pages.findOne({ page_link: path[1] }).exec(cb);
       },
+      blogsdata: function (cb) {
+          blogs
+            .find({ blog_category: "Artificial Intelligence" })
+            .select("blog_title blog_link blogimg blog_category date blog_meta_description")
+            .limit(3)
+            .sort({ _id: -1 })
+            .lean()
+            .exec(cb);
+        },
     },
     function (err, results) {
       try {
         res.render("Webapp/adaptive-ai-development-company.ejs", {
           metadata: results.cmsdata,
+            blogsdata: results.blogsdata,
         });
       } catch (err) {
         return callback(new Error("Error"));
@@ -6475,6 +6485,7 @@ router.get("/adaptive-ai-development-company", async function (req, res) {
     },
   );
 });
+
 router.get("/ai-powered-banking-solutions", async function (req, res) {
   const path = req.path.split("/");
   async.parallel(
