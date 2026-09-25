@@ -369,7 +369,7 @@
         $(window).scroll(function () {
             var wscroll = $(this).scrollTop();
             if (wscroll > 50) {
-                $(".top-newbar-section .navbar").css("background-color", "rgb(27, 27, 27)");
+                $(".top-newbar-section .navbar").css("background-color", "rgb(27, 27, 27)",);
             } else {
                 $(".top-newbar-section .navbar").css("background-color", "#ffffff1c");
             }
@@ -496,4 +496,19 @@
         });
 
     });
+</script>
+
+<script>
+window.addEventListener("scroll", function () {
+    const nav = document.querySelector(".nw-gm-pg .top-newbar-section nav");
+    const topSection = document.querySelector(".nw-gm-pg .top-newbar-section");
+
+    if (window.scrollY > 100) {
+        nav.style.background = "linear-gradient(90deg, #8391D2 0%, #FE9CB0 100%)";
+        topSection.style.marginTop = "0";
+    } else {
+        nav.style.background = "";
+        topSection.style.marginTop = "";
+    }
+});
 </script>
