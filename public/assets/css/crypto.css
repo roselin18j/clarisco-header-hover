@@ -1763,11 +1763,6 @@ body.modal-open .top-home-new-social-fixed.next-searching {
 
     @media screen and (max-width : 991px) {
       padding: 20px !important;
-      padding-right: 80px !important;
-    }
-
-    @media screen and (max-width : 650px) {
-      padding-right: 20px !important;
     }
 
   }
@@ -1829,7 +1824,8 @@ body.modal-open .top-home-new-social-fixed.next-searching {
     }
 
     @media screen and (max-width : 991px) {
-      max-width: 550px;
+      max-width: 100%;
+      margin-top: 50px;
     }
 
     .lft-dis {
@@ -1876,14 +1872,6 @@ body.modal-open .top-home-new-social-fixed.next-searching {
       text-align: center;
 
       @media screen and (max-width : 991px) {
-        position: absolute;
-        left: unset;
-        right: -94px;
-        text-align: end;
-        width: fit-content;
-      }
-
-      @media (max-width: 650px) {
         display: none;
       }
 
@@ -1946,11 +1934,17 @@ body.modal-open .top-home-new-social-fixed.next-searching {
       @media screen and (max-width : 991px) {
         padding: 0 20px;
       }
+
+      @media screen and (max-width : 450px) {
+        padding: 0;
+      }
     }
 
     @media screen and (max-width :768px) {
       padding: 0 10px;
     }
+
+
   }
 
   .out-ryt {
@@ -1975,9 +1969,6 @@ body.modal-open .top-home-new-social-fixed.next-searching {
           height: 400px;
         }
 
-        @media screen and (max-width : 450px) {
-          height: 300px;
-        }
 
       }
 
@@ -2264,6 +2255,12 @@ body.modal-open .top-home-new-social-fixed.next-searching {
         padding: 30px 34px;
         z-index: 2;
 
+        @media screen and (max-width : 768px) {
+          width: 270px;
+          height: 270px;
+          border: 10px solid rgba(254, 156, 176, 1);
+        }
+
         @media screen and (max-width : 650px) {
           width: 230px;
           border: 6px solid rgba(254, 156, 176, 1);
@@ -2329,12 +2326,26 @@ body.modal-open .top-home-new-social-fixed.next-searching {
         clip-path: polygon(25% 0, 76% 0px, 72% 97%, 28% 100%);
       }
 
+      @media screen and (max-width : 991px) {
+
+        clip-path: unset;
+        background: transparent;
+        padding: 50px 0 0;
+        height: auto;
+      }
+
       h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        @media screen and (max-width : 991px) {
+          font-size: 22px;
+          color: #fff;
+          padding: 0;
+        }
       }
     }
   }
@@ -2342,6 +2353,7 @@ body.modal-open .top-home-new-social-fixed.next-searching {
   .nwe-toke-sec-4.benefits-sec {
     padding-top: 0 !important;
     margin: 80px 0 50px;
+    overflow: hidden;
 
     .bene-lft {
       @media screen and (max-width : 1301px) {
@@ -2387,6 +2399,25 @@ body.modal-open .top-home-new-social-fixed.next-searching {
       text-align: center;
       font-size: 22px;
       margin-top: -3px;
+
+      @media screen and (max-width : 1300px) {
+        font-size: 21px;
+        clip-path: polygon(6% -1px, 94% 0px, 90% 96%, 8% 94%);
+      }
+
+      @media screen and (max-width : 1200px) {
+        font-size: 20px;
+        clip-path: polygon(0% -1px, 100% 0px, 94% 95%, 4% 95%);
+      }
+
+      @media screen and (max-width : 991px) {
+        font-size: 22px;
+        clip-path: unset;
+        background: transparent;
+        color: #fff;
+        padding: 57px 0 0;
+        height: auto;
+      }
     }
 
     .card {
@@ -2436,6 +2467,15 @@ body.modal-open .top-home-new-social-fixed.next-searching {
       font-size: 22px;
       padding-bottom: 9px;
       margin-top: 0;
+
+      @media screen and (max-width : 991px) {
+        font-size: 22px;
+        clip-path: unset;
+        background: transparent;
+        color: #fff;
+        padding: 57px 0 0;
+        height: auto;
+      }
     }
 
     .card {
