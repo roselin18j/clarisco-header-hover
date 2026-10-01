@@ -1876,6 +1876,10 @@
             h3 {
                 font-size: 18px;
                 font-weight: 600;
+
+                @media screen and (max-width : 550px) {
+                    font-size: 16px;
+                }
             }
 
             img {
